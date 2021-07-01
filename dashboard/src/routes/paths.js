@@ -77,7 +77,8 @@ export const PATH_DASHBOARD = {
     post: path(ROOTS_DASHBOARD, '/blog/post/:title'),
     postById: path(ROOTS_DASHBOARD, '/blog/post/portfolio-review-is-this-portfolio-too-creative'),
     newPost: path(ROOTS_DASHBOARD, '/blog/new-post')
-  }
+  },
+  gallary: path(ROOTS_DASHBOARD, '/gallary'),
 };
 
 export const PATH_DOCS = {
