@@ -9,7 +9,8 @@ import { v4 as uuid4 } from 'uuid';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-
+import Gallery from "react-photo-gallery";
+import { photos } from "./photos";
 
 export default function Gallary() {
 
@@ -89,6 +90,10 @@ export default function Gallary() {
                     </div>
                 )}
             </Dropzone>
+
+            <br />
+            <br />
+            <Gallery photos={photos} />
         </>
     )
 }
