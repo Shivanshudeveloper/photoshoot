@@ -137,7 +137,8 @@ export default function Router() {
           ]
         },
         { path: 'calendar', element: <Calendar /> },
-        { path: 'gallary', element: <Gallary /> }
+        { path: 'gallary', element: <MainGallery /> },
+        { path: 'viewgallery', element: <Gallary /> }
         // { path: 'kanban', element: <Kanban /> }
       ]
     },
@@ -167,10 +168,10 @@ export default function Router() {
       ]
     },
     {
-      path: '/',
+      path: '/daksh',
       element: <MainLayout />,
       children: [
-        { path: '/', element: <LandingPage /> },
+        { path: '/daksh', element: <LandingPage /> },
         { path: 'about-us', element: <About /> },
         { path: 'contact-us', element: <Contact /> },
         { path: 'faqs', element: <Faqs /> },
@@ -229,11 +230,23 @@ export default function Router() {
         }
       ]
     },
-    { path: '*', element: <Navigate to="/404" replace /> }
+    { path: '*', element: <Navigate to="/404" replace /> },
+    { path: '/', element: <HomeLanding /> },
+    { path: '/funktionen', element: <Funktionen /> },
+    { path: '/impressum-datenschutzerklaerung', element: <Impressum /> },
+    { path: '/preise', element: <Preise /> },
+    { path: '/kontakt', element: <Kontakt /> },
+    { path: '/cookie-richtlinie-eu', element: <Impressum /> },
   ]);
 }
 
-// IMPORT COMPONENTS
+// Landing Pages
+const HomeLanding = Loadable(lazy(() => import('../pages/landing/pages/Home')));
+const Funktionen = Loadable(lazy(() => import('../pages/landing/pages/Funktionen')));
+const Impressum = Loadable(lazy(() => import('../pages/landing/pages/Impressum')));
+const Kontakt = Loadable(lazy(() => import('../pages/landing/pages/Kontakt')));
+const Preise = Loadable(lazy(() => import('../pages/landing/pages/Preise')));
+
 
 // Authentication
 const Login = Loadable(lazy(() => import('../pages/authentication/Login')));
@@ -262,6 +275,7 @@ const Chat = Loadable(lazy(() => import('../pages/dashboard/Chat')));
 const Mail = Loadable(lazy(() => import('../pages/dashboard/Mail')));
 const Calendar = Loadable(lazy(() => import('../pages/dashboard/Calendar')));
 const Gallary = Loadable(lazy(() => import('../pages/dashboard/gallary/Gallary')));
+const MainGallery = Loadable(lazy(() => import('../pages/dashboard/gallary/MainGallery')));
 // const Kanban = Loadable(lazy(() => import('../pages/dashboard/Kanban')));
 // Docs
 const Docs = Loadable(lazy(() => import('../pages/Docs')));

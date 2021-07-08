@@ -104,7 +104,7 @@ const sidebarConfig = [
     items: [
       { title: 'Home', path: PATH_DASHBOARD.mail.root, icon: ICONS.kanban },
       { title: 'Gallary', path: PATH_DASHBOARD.gallary, icon: ICONS.ecommerce },
-      { title: 'Profile', path: PATH_DASHBOARD.calendar, icon: ICONS.user },
+      { title: 'Profile', path: '/dashboard/user/account', icon: ICONS.user },
     ]
   }
 ];

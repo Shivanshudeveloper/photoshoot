@@ -10,6 +10,21 @@ import { PATH_DASHBOARD } from '../../../routes/paths';
 //
 import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../animate';
 
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
+  multilineColor:{
+    color:'red',
+    backgroundColor: 'gray'
+  }
+}));
 // ----------------------------------------------------------------------
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
@@ -67,70 +82,26 @@ const HeroImgStyle = styled(motion.img)(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function LandingHero() {
+  const classes = useStyles();
   return (
     <>
       <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
-        <HeroOverlayStyle alt="overlay" src="/static/overlay.svg" variants={varFadeIn} />
-
-        <HeroImgStyle alt="hero" src="/static/home/hero.png" variants={varFadeInUp} />
-
+        <HeroOverlayStyle alt="overlay" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621399609/photoshooted/background_lv9tfq.svg" variants={varFadeIn} />
         <Container maxWidth="lg">
           <ContentStyle>
+           
             <motion.div variants={varFadeInRight}>
-              <Typography variant="h1" sx={{ color: 'common.white' }}>
-                Start a <br />
-                new project <br /> with
-                <Typography component="span" variant="h1" sx={{ color: 'primary.main' }}>
-                  &nbsp;Minimal
-                </Typography>
-              </Typography>
+              <TextField id="outlined-basic" label="Outlined" variant="outlined" 
+              
+              InputProps={{
+                className: classes.multilineColor
+              }}
+              />
             </motion.div>
 
-            <motion.div variants={varFadeInRight}>
-              <Typography sx={{ color: 'common.white' }}>
-                The starting point for your next project based on easy-to-customize Material-UI © helps you build apps
-                faster and better.
-              </Typography>
-            </motion.div>
+            
 
-            <Stack
-              component={motion.div}
-              variants={varFadeInRight}
-              direction="row"
-              spacing={1}
-              justifyContent={{ xs: 'center', md: 'flex-start' }}
-            >
-              <img alt="sketch icon" src="/static/home/ic_sketch.svg" width={20} height={20} />
-              <Link
-                underline="always"
-                href="https://www.sketch.com/s/0fa4699d-a3ff-4cd5-a3a7-d851eb7e17f0"
-                target="_blank"
-                sx={{ color: 'common.white' }}
-              >
-                Preview in Sketch Cloud
-              </Link>
-            </Stack>
 
-            <motion.div variants={varFadeInRight}>
-              <Button
-                size="large"
-                variant="contained"
-                component={RouterLink}
-                to={PATH_DASHBOARD.root}
-                startIcon={<Icon icon={flashFill} width={20} height={20} />}
-              >
-                Live Preview
-              </Button>
-            </motion.div>
-
-            <Stack direction="row" spacing={1.5} justifyContent={{ xs: 'center', md: 'flex-start' }}>
-              <motion.img variants={varFadeInRight} src="/static/home/ic_m_sketch.svg" />
-              <motion.img variants={varFadeInRight} src="/static/home/ic_m_figma.svg" />
-              <motion.img variants={varFadeInRight} src="/static/home/ic_m_material.svg" />
-              <motion.img variants={varFadeInRight} src="/static/home/ic_m_react.svg" />
-              <motion.img variants={varFadeInRight} src="/static/home/ic_m_js.svg" />
-              <motion.img variants={varFadeInRight} src="/static/home/ic_m_ts.svg" />
-            </Stack>
           </ContentStyle>
         </Container>
       </RootStyle>

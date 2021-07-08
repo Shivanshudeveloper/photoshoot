@@ -47,7 +47,7 @@ export default function Logo({ sx }) {
           />
         </g>
       </svg> */}
-      <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1620378077/photoshooted/Photoshooted_A_u2hjii.png"></img>
+      <img onClick={() => window.location.href = "/"} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1620378077/photoshooted/Photoshooted_A_u2hjii.png"></img>
     </Box>
   );
 }
