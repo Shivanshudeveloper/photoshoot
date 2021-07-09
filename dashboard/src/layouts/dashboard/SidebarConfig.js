@@ -3,6 +3,10 @@ import { PATH_DASHBOARD } from '../../routes/paths';
 // components
 import SvgIconStyle from '../../components/SvgIconStyle';
 
+import { Icon } from '@iconify/react';
+import peopleFill from '@iconify/icons-eva/people-fill';
+import roundPermMedia from '@iconify/icons-ic/round-perm-media';
+
 // ----------------------------------------------------------------------
 
 const getIcon = (name) => (
@@ -19,7 +23,9 @@ const ICONS = {
   ecommerce: getIcon('ic_ecommerce'),
   analytics: getIcon('ic_analytics'),
   dashboard: getIcon('ic_dashboard'),
-  kanban: getIcon('ic_kanban')
+  kanban: getIcon('ic_kanban'),
+  docs: <Icon icon={roundPermMedia} width={20} height={20} />,
+  users: <Icon icon={peopleFill} width={20} height={20} />
 };
 
 const sidebarConfig = [
@@ -103,9 +109,9 @@ const sidebarConfig = [
     // subheader: 'app',
     items: [
       { title: 'Home', path: PATH_DASHBOARD.general.app, icon: ICONS.kanban },
-      { title: 'Photo Galleries', path: PATH_DASHBOARD.gallary, icon: ICONS.ecommerce },
+      { title: 'Photo Galleries', path: PATH_DASHBOARD.gallary, icon: ICONS.docs },
       { title: 'Profile', path: '/dashboard/user/account', icon: ICONS.user },
-      { title: 'Customer', path: PATH_DASHBOARD.customer, icon: ICONS.user },
+      { title: 'Customer', path: PATH_DASHBOARD.customer, icon: ICONS.users },
       { title: 'Customer Billing', path: PATH_DASHBOARD.custombill, icon: ICONS.user },
     ]
   }
