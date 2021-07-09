@@ -79,6 +79,8 @@ export const PATH_DASHBOARD = {
     newPost: path(ROOTS_DASHBOARD, '/blog/new-post')
   },
   gallary: path(ROOTS_DASHBOARD, '/gallary'),
+  customer: path(ROOTS_DASHBOARD, '/customer'),
+  custombill: path(ROOTS_DASHBOARD, '/custombill'),
 };
 
 export const PATH_DOCS = {

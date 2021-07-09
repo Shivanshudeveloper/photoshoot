@@ -100,11 +100,13 @@ const sidebarConfig = [
   //   ]
   // }
   {
-    subheader: 'app',
+    // subheader: 'app',
     items: [
-      { title: 'Home', path: PATH_DASHBOARD.mail.root, icon: ICONS.kanban },
-      { title: 'Gallary', path: PATH_DASHBOARD.gallary, icon: ICONS.ecommerce },
+      { title: 'Home', path: PATH_DASHBOARD.general.app, icon: ICONS.kanban },
+      { title: 'Photo Galleries', path: PATH_DASHBOARD.gallary, icon: ICONS.ecommerce },
       { title: 'Profile', path: '/dashboard/user/account', icon: ICONS.user },
+      { title: 'Customer', path: PATH_DASHBOARD.customer, icon: ICONS.user },
+      { title: 'Customer Billing', path: PATH_DASHBOARD.custombill, icon: ICONS.user },
     ]
   }
 ];

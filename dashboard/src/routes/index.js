@@ -138,7 +138,9 @@ export default function Router() {
         },
         { path: 'calendar', element: <Calendar /> },
         { path: 'gallary', element: <MainGallery /> },
-        { path: 'viewgallery', element: <Gallary /> }
+        { path: 'viewgallery', element: <Gallary /> },
+        { path: 'customer', element: <Customer /> },
+        { path: 'custombill', element: <CustomerBill /> },
         // { path: 'kanban', element: <Kanban /> }
       ]
     },
@@ -275,6 +277,8 @@ const Chat = Loadable(lazy(() => import('../pages/dashboard/Chat')));
 const Mail = Loadable(lazy(() => import('../pages/dashboard/Mail')));
 const Calendar = Loadable(lazy(() => import('../pages/dashboard/Calendar')));
 const Gallary = Loadable(lazy(() => import('../pages/dashboard/gallary/Gallary')));
+const Customer = Loadable(lazy(() => import('../pages/dashboard/gallary/Customer')));
+const CustomerBill = Loadable(lazy(() => import('../pages/dashboard/gallary/CustomerBill')));
 const MainGallery = Loadable(lazy(() => import('../pages/dashboard/gallary/MainGallery')));
 // const Kanban = Loadable(lazy(() => import('../pages/dashboard/Kanban')));
 // Docs
