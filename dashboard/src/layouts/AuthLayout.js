@@ -36,7 +36,7 @@ export default function AuthLayout({ children }) {
   return (
     <HeaderStyle>
       <RouterLink to="/">
-        <Logo />
+    
       </RouterLink>
 
       <MHidden width="smDown">

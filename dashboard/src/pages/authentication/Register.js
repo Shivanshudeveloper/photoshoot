@@ -28,7 +28,14 @@ const SectionStyle = styled(Card)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  margin: theme.spacing(2, 0, 2, 2)
+  margin: theme.spacing(2, 0, 2, 2),
+
+  backgroundImage: 'url("https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621399609/photoshooted/background_lv9tfq.svg")',
+  backgroundSize: 'cover',
+  backgroundPosition: 'right',
+  backgroundRepeat: 'no-repeat',
+
+  padding: '0 2% 0 2%'
 }));
 
 const ContentStyle = styled('div')(({ theme }) => ({
@@ -57,23 +64,20 @@ export default function Register() {
 
       <MHidden width="mdDown">
         <SectionStyle>
-          <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-            Manage your photos more effectively with Photoshooted
-          </Typography>
-          <img alt="register" src="/static/illustrations/illustration_register.png" />
+          <img alt="register" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1620378009/photoshooted/Photoshooted_logo_white_bg96p5.png" />
         </SectionStyle>
       </MHidden>
 
       <Container>
         <ContentStyle>
           <Box sx={{ mb: 5, display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Typography variant="h4" gutterBottom>
+            <Box style={{textAlign: 'center', color: 'rgb(104, 82, 237)'}} sx={{ flexGrow: 1 }}>
+              <Typography style={{fontFamily: "'Varela Round', sans-serif"}} variant="h4" gutterBottom>
                 Get started absolutely free.
               </Typography>
               <Typography sx={{ color: 'text.secondary' }}>Free forever. No credit card needed.</Typography>
             </Box>
-            <Tooltip title={(method === 'firebase' && 'Firebase') || (method === 'cognito' && 'Cognito') || 'JWT'}>
+            {/* <Tooltip title={(method === 'firebase' && 'Firebase') || (method === 'cognito' && 'Cognito') || 'JWT'}>
               <Box
                 component="img"
                 src={`/static/auth/${
@@ -81,7 +85,7 @@ export default function Register() {
                 }.png`}
                 sx={{ width: 32, height: 32 }}
               />
-            </Tooltip>
+            </Tooltip> */}
           </Box>
 
           {method === 'firebase' && <AuthFirebaseSocials />}
