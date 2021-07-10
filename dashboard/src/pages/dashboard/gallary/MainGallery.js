@@ -14,6 +14,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import { useDispatch } from '../../../redux/store';
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
+import Settings from '../../../components/settings';
 
 export default function Gallary() {
     const dispatch = useDispatch();
@@ -27,6 +28,7 @@ export default function Gallary() {
 
     return (
         <>
+        <Settings />
             <Dialog
                 open={openGallery}
                 onClose={handleCloseGallery}
@@ -66,7 +68,7 @@ export default function Gallary() {
                 My Gallery
             </h1>
             
-            <Container style={{ marginTop: '40px' }} maxWidth="mx">
+            <Container style={{ marginTop: '10px' }} maxWidth="mx">
                 <Button onClick={handleClickOpenGallery} style={{ float: 'right', marginBottom: '20px' }} variant="contained" size="medium">
                     Create a new gallery
                 </Button>

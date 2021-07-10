@@ -23,6 +23,7 @@ import {
   AccountNotifications,
   AccountChangePassword
 } from '../../components/_dashboard/user/account';
+import Settings from '../../components/settings';
 
 // ----------------------------------------------------------------------
 
@@ -71,7 +72,8 @@ export default function UserAccount() {
   };
 
   return (
-    <Page title="User: Account Settings | Minimal-UI">
+    <Page title="Photoshooted">
+      <Settings />
       <Container>
         <HeaderBreadcrumbs
           heading="Account"

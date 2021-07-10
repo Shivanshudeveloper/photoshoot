@@ -13,6 +13,7 @@ import Page from '../../components/Page';
 import { MHidden } from '../../components/@material-extend';
 import { LoginForm } from '../../components/authentication/login';
 import AuthFirebaseSocials from '../../components/authentication/AuthFirebaseSocial';
+import Settings from '../../components/settings';
 
 // ----------------------------------------------------------------------
 
@@ -63,6 +64,7 @@ export default function Login() {
 
   return (
     <RootStyle title="Login | Photoshooted">
+      <Settings />
       <AuthLayout>
         Don’t have an account? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.register}>

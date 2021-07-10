@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,34 +11,54 @@ const Footer = () => {
                         <div className="col-lg-12">
                             <div className="copyright text-center">
                             <ul>
-                                <li><a className="text-light" href="/funktionen">Funktionen</a></li>
+                                <li>
+                                    <Link className="text-light" to="/funktionen">
+                                        Funktionen
+                                    </Link>
+                                </li>
+                                
+                                <li>
+                                    |
+                                </li>
+                                
+                                <li>
+                                    <Link className="text-light" to="/preise">
+                                        Preise
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    |
+                                </li>
+
+                                <li>
+                                    <Link className="text-light" to="/impressum-datenschutzerklaerung">
+                                        Datenschutzerklärung
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    |
+                                </li>
+
+
+                                <li>
+                                    <Link className="text-light" to="/cookie-richtlinie-eu">
+                                        Cookie-Richtlinie
+                                    </Link>
+                                </li>
+
                                 
                                 <li>
                                     |
                                 </li>
-                                
-                                <li><a className="text-light" href="/preise">Preise</a></li>
+
 
                                 <li>
-                                    |
+                                    <Link className="text-light" to="/impressum-datenschutzerklaerung">
+                                        Impressum
+                                    </Link>
                                 </li>
-
-                                <li><a className="text-light" href="/impressum-datenschutzerklaerung">Datenschutzerklärung</a></li>
-
-                                <li>
-                                    |
-                                </li>
-
-
-                                <li><a className="text-light" href="/cookie-richtlinie-eu">Cookie-Richtlinie</a></li>
-
-                                
-                                <li>
-                                    |
-                                </li>
-
-
-                                <li><a className="text-light" href="/impressum-datenschutzerklaerung">Impressum</a></li>
 
 
                                 <li>
@@ -45,7 +66,11 @@ const Footer = () => {
                                 </li>
 
 
-                                <li><a className="text-light" href="/kontakt">Kontakt</a></li>
+                                <li>
+                                    <Link className="text-light" to="/kontakt">
+                                        Kontakt
+                                    </Link>
+                                </li>
 
 
                             </ul>

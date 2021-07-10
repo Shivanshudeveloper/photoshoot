@@ -21,6 +21,7 @@ import {
 import { getGallery } from '../../../redux/slices/user';
 import { UploadSingleFile } from '../../../components/upload';
 import fakeRequest from '../../../utils/fakeRequest';
+import Settings from '../../../components/settings';
 
 
 const useStyles = makeStyles({
@@ -146,6 +147,7 @@ export default function Gallary() {
 
     return (
         <>
+        <Settings />
             <Dialog
                 open={openGallery}
                 onClose={handleCloseGallery}

@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Settings from '../../../components/settings';
 
 const useStyles = makeStyles({
   table: {
@@ -18,6 +19,11 @@ export default function Customer() {
   const classes = useStyles();
 
   return (
+    <>
+    <Settings />
+    <h1>
+        Customer
+    </h1>
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
@@ -31,5 +37,6 @@ export default function Customer() {
         </TableHead>
       </Table>
     </TableContainer>
+    </>
   );
 }
