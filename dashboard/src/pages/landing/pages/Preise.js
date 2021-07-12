@@ -11,7 +11,7 @@ const Preise = () => {
             <section className="forprices">
                 <Header />
                 <center style={{ marginTop: '10%' }}>
-                    <h1 className="text-light">
+                    <h1 style={{ fontWeight: '100' }} className="text-light">
                         Bei unseren Abos <br /> ist für jeden etwas dabei.
                     </h1>
                 </center>

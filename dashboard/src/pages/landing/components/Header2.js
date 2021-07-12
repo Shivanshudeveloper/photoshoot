@@ -74,7 +74,7 @@ const Header2 = ({ title }) => {
                             <center>
                                 {
                                     isBrowser ? (
-                                        <h1 style={{color: "white"}}>{title}</h1>
+                                        <h1 style={{ color: "white", fontWeight: '100' }}>{title}</h1>
                                     ) : (
                                         <h2 style={{color: "white", marginTop: '28px'}}>{title}</h2>
                                     )
