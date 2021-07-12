@@ -9,7 +9,9 @@ import LockIcon from '@material-ui/icons/Lock';
 import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { motion } from 'framer-motion';
 import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
-
+import {
+    isBrowser
+} from "react-device-detect";
 // Components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -91,24 +93,49 @@ const Home = () => {
                 
             <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <div className="container mainpagecontainer">
-                    <center>
-                        <motion.div variants={varFadeInRight}>
-                            <h2 style={{ fontWeight: 'normal' }} className="text-light">Fotoalbum Code</h2>
-                            <hr className="forhr" />
-                                <InputBase
-                                    className={classes.input}
-                                    placeholder="XXXXXX"
-                                    onKeyDown={checkCode}
-                                    onChange={(e) => setordernumber(e.target.value)}
-                                    maxlength="6"
-                                    inputProps={{ 'aria-label': 'XXXXXX' }}
-                                />
-                                <IconButton type="button" className={classes.iconButton} aria-label="search">
-                                    <LockIcon style={{ color: '#ffffff' }} />
-                                </IconButton>
-                            <h4 style={{ fontWeight: 'normal' }} className="text-light mt-5">Gib hier deinen Code ein und bestätige mit Enter.</h4>
-                        </motion.div>
-                    </center>
+                    {
+                        isBrowser ? (
+                            <center>
+                                <motion.div variants={varFadeInRight}>
+                                    <h2 style={{ fontWeight: 'normal' }} className="text-light">Fotoalbum Code</h2>
+                                    <hr className="forhr" />
+                                        <InputBase
+                                            className={classes.input}
+                                            placeholder="XXXXXX"
+                                            onKeyDown={checkCode}
+                                            onChange={(e) => setordernumber(e.target.value)}
+                                            maxlength="6"
+                                            inputProps={{ 'aria-label': 'XXXXXX' }}
+                                        />
+                                        <IconButton type="button" className={classes.iconButton} aria-label="search">
+                                            <LockIcon style={{ color: '#ffffff' }} />
+                                        </IconButton>
+                                    <h4 style={{ fontWeight: 'normal' }} className="text-light mt-5">Gib hier deinen Code ein und bestätige mit Enter.</h4>
+                                </motion.div>
+                            </center>
+                        ) : (
+                            <center>
+                                <br />
+                                <br />
+                                <motion.div variants={varFadeInRight}>
+                                    <h2 style={{ fontWeight: 'normal' }} className="text-light">Fotoalbum Code</h2>
+                                    <hr className="forhr" />
+                                        <InputBase
+                                            className={classes.input}
+                                            placeholder="XXXXXX"
+                                            onKeyDown={checkCode}
+                                            onChange={(e) => setordernumber(e.target.value)}
+                                            maxlength="6"
+                                            inputProps={{ 'aria-label': 'XXXXXX' }}
+                                        />
+                                        <IconButton type="button" className={classes.iconButton} aria-label="search">
+                                            <LockIcon style={{ color: '#ffffff' }} />
+                                        </IconButton>
+                                    <h4 style={{ fontWeight: 'normal' }} className="text-light mt-5">Gib hier deinen Code ein und bestätige mit Enter.</h4>
+                                </motion.div>
+                            </center>
+                        )
+                    }
                 </div>
             </RootStyle>
 
