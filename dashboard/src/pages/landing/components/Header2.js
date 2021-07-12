@@ -2,7 +2,9 @@ import React from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import { Link } from 'react-router-dom';
-
+import {
+    isBrowser
+} from "react-device-detect";
 
 
 const Header2 = ({ title }) => {
@@ -69,7 +71,16 @@ const Header2 = ({ title }) => {
                                     </div>
                                 </div>
                             </nav> 
-                            <center><h1 style={{color: "white"}}>{title}</h1></center>
+                            <center>
+                                {
+                                    isBrowser ? (
+                                        <h1 style={{color: "white"}}>{title}</h1>
+                                    ) : (
+                                        <h2 style={{color: "white", marginTop: '28px'}}>{title}</h2>
+                                    )
+                                }
+                            
+                            </center>
                         </div>
                     </div> 
                 </div>

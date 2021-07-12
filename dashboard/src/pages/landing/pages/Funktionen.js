@@ -1,7 +1,10 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 import { makeStyles } from '@material-ui/core/styles';
-
+import Button from '@material-ui/core/Button';
+import {
+    isBrowser
+} from "react-device-detect";
 
 import Header2 from '../components/Header2';
 import Footer2 from '../components/Footer2';
@@ -51,56 +54,138 @@ const Funktionen = () => {
 
             <section>
                 <div style={{ marginBottom: '120px', marginTop: '80px', maxWidth: '1360px' }} className="container">
-                    <div className="row">
-                        <div className="col-md">
-                            <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492667/photoshooted/download_su8cdo.svg" />
-                            <h2 style={{ color: '#6852ed' }}>
-                            Wir optimieren deinen <br /> Workflow
-                            </h2>
+                    
+                    {
+                        isBrowser ? (
+                            <div className="row">
+                                <div className="col-md">
+                                    <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492667/photoshooted/download_su8cdo.svg" />
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    Wir optimieren deinen <br /> Workflow
+                                    </h2>
 
-                            <p className="mt-5 w-75">
-                            Von der Fotoerstellung über den Verkauf und die Abrechnung bis hin zu den Fotoabzügen. Du schießt die Fotos, wir kümmern uns um den Rest.
-                            </p>
-                        </div>
-                        <div className="col-md">
-                            <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="serviceimg" />
-                        </div>
-                    </div>
+                                    <p className="mt-5 w-75">
+                                    Von der Fotoerstellung über den Verkauf und die Abrechnung bis hin zu den Fotoabzügen. Du schießt die Fotos, wir kümmern uns um den Rest.
+                                    </p>
+                                </div>
+                                <div className="col-md">
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="serviceimg" />
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="row">
+                                <div className="col-md">
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="mb-4" />
+                                </div>
+                                <div className="col-md text-center">
+                                    <center>
+                                        <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492667/photoshooted/download_su8cdo.svg" />
+                                    </center>
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    Wir optimieren deinen <br /> Workflow
+                                    </h2>
+
+                                    <p className="mt-5">
+                                    Von der Fotoerstellung über den Verkauf und die Abrechnung bis hin zu den Fotoabzügen. Du schießt die Fotos, wir kümmern uns um den Rest.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        )
+                    }
+                    
 
 
-                    <div style={{ marginTop: '15%' }} className="row">
-                        <div className="col-md">
-                            <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg" />
-                        </div>
-                        <div className="col-md">
-                            <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492943/photoshooted/download_1_iq44kp.svg" />
-                            <h2 style={{ color: '#6852ed' }}>
-                            Deine Kunden verdienen nur das Beste!
-                            </h2>
+                    
 
-                            <p className="mt-5 w-75">
-                            Mit der Automatisierung des Verkaufsprozesses ist unsere Arbeit lange nicht getan! Unser Produkt ist Kunden- und Benutzerfreundlich, so haben deine Kund*innen z.B die Möglichkeit Fotoabzüge direkt im Prozess zu bestellen.
-                            </p>
-                        </div>
-                    </div>
+                    {
+                        isBrowser ? (
+                            <div style={{ marginTop: '15%' }} className="row">
+                                <div className="col-md">
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg" />
+                                </div>
+                                <div className="col-md">
+                                    <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492943/photoshooted/download_1_iq44kp.svg" />
+
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    Deine Kunden verdienen nur das Beste!
+                                    </h2>
+
+                                    <p className="mt-5 w-75">
+                                    Mit der Automatisierung des Verkaufsprozesses ist unsere Arbeit lange nicht getan! Unser Produkt ist Kunden- und Benutzerfreundlich, so haben deine Kund*innen z.B die Möglichkeit Fotoabzüge direkt im Prozess zu bestellen.
+                                    </p>
+                                </div>
+                            </div>
+                        ) : (
+                            <div style={{ marginTop: '15%' }} className="row">
+                                <div className="col-md">
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="mb-4" />
+                                </div>
+                                <div className="col-md text-center">
+                                    <center>
+                                        <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492943/photoshooted/download_1_iq44kp.svg" />
+                                    </center>
+
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    Deine Kunden verdienen nur das Beste!
+                                    </h2>
+
+                                    <p className="mt-5">
+                                    Mit der Automatisierung des Verkaufsprozesses ist unsere Arbeit lange nicht getan! Unser Produkt ist Kunden- und Benutzerfreundlich, so haben deine Kund*innen z.B die Möglichkeit Fotoabzüge direkt im Prozess zu bestellen.
+                                    </p>
+                                </div>
+                            </div>
+                        )
+                    }
 
 
-                    <div style={{ marginTop: '15%' }} className="row">
-                        <div className="col-md">
-                            <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493062/photoshooted/download_2_hqgw0l.svg" />
-                            <h2 style={{ color: '#6852ed' }}>
-                            Datenschutz wird bei uns großgeschrieben
-                            Deine Daten sind bei uns sicher!
-                            </h2>
 
-                            <p className="mt-5 w-75">
-                            Alle Fotos und Daten werden verschlüsselt und nur in Deutschland gehostet sowie nach europäischem Datenschutz verarbeitet.
-                            </p>
-                        </div>
-                        <div className="col-md">
-                            <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493015/photoshooted/servers-scaled-07e8bf15_ffeyuh.webp" className="serviceimg" />
-                        </div>
-                    </div>
+                    {
+                        isBrowser ? (
+                            <div style={{ marginTop: '15%' }} className="row">
+                                <div className="col-md">
+                                    <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493062/photoshooted/download_2_hqgw0l.svg" />
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    Datenschutz wird bei uns großgeschrieben
+                                    Deine Daten sind bei uns sicher!
+                                    </h2>
+
+                                    <p className="mt-5 w-75">
+                                    Alle Fotos und Daten werden verschlüsselt und nur in Deutschland gehostet sowie nach europäischem Datenschutz verarbeitet.
+                                    </p>
+                                </div>
+                                <div className="col-md">
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493015/photoshooted/servers-scaled-07e8bf15_ffeyuh.webp" className="serviceimg" />
+                                </div>
+                            </div>
+                        ) : (
+                            <div style={{ marginTop: '15%' }} className="row">
+                                <div className="col-md">
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493015/photoshooted/servers-scaled-07e8bf15_ffeyuh.webp" className="mb-4" />
+                                </div>
+                                <div className="col-md text-center">
+                                    <center>
+                                        <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493062/photoshooted/download_2_hqgw0l.svg" />
+                                    </center>
+
+                                    
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    Datenschutz wird bei uns großgeschrieben
+                                    Deine Daten sind bei uns sicher!
+                                    </h2>
+
+                                    <p className="mt-5">
+                                    Alle Fotos und Daten werden verschlüsselt und nur in Deutschland gehostet sowie nach europäischem Datenschutz verarbeitet.
+                                    </p>
+                                </div>
+                            </div>
+                        )
+                    }
+
+
+                    
+
+
                 </div>
             </section>
 
@@ -121,10 +206,10 @@ const Funktionen = () => {
                                 <p className="text-light text-left">
                                 Hol dir jetzt ein Abonnement über 6 Monate  und sichere dir 10 % Nachlass auf deine Monatsrechnung.
                                 </p>
-
-                                <button className="btn btn-outline-secondary btn-lg mr-5 mt-4 text-light">
-                                    Get it Now
-                                </button>
+                                
+                            </center>
+                            <center>
+                            <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '20px' }} href="/preise" size="large" fullWidth variant="contained">Get it Now</Button>
                             </center>
                         </div>
                     </div>
@@ -235,53 +320,95 @@ const Funktionen = () => {
 
 
             <section>
-                <div style={{ marginBottom: '50px', marginTop: '80px', maxWidth: '1360px' }} className="container">
-                    <h2 style={{ color: '#6852ed' }}>
-                    Deine Kunden werden es lieben!
-                    </h2>
 
-                    <div className="row mt-5">
-                        <div className="col-md">
-                            <img className="serviceimg" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621494227/photoshooted/devices-1-535281af_jr6zu1.webp" />
-                        </div>
-                        <div style={{margin: "5%"}} className="col-md">
+                {
+                    isBrowser ? (
+                        <div style={{ marginBottom: '50px', marginTop: '80px', maxWidth: '1360px' }} className="container">
                             <h2 style={{ color: '#6852ed' }}>
-                            Verschiedene Endgeräte – bei einheitlicher Leistungsstärke und Benutzeroberfläche.
+                            Deine Kunden werden es lieben!
                             </h2>
-                            <center className="mt-5">
-                                <a href="#!">Desktop</a> | <a href="#!"> Kamera </a> | <a href="#!">App</a>
-                            </center>
+
+                            <div className="row mt-5">
+                                <div className="col-md">
+                                    <img className="serviceimg" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621494227/photoshooted/devices-1-535281af_jr6zu1.webp" />
+                                </div>
+                                <div style={{margin: "5%"}} className="col-md">
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    Verschiedene Endgeräte – bei einheitlicher Leistungsstärke und Benutzeroberfläche.
+                                    </h2>
+                                    <center className="mt-5">
+                                        <a href="#!">Desktop</a> | <a href="#!"> Kamera </a> | <a href="#!">App</a>
+                                    </center>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    ) : (
+                        <div style={{ marginBottom: '50px', marginTop: '80px', maxWidth: '1360px' }} className="container">
+                            <h2 style={{ color: '#6852ed' }}>
+                            Deine Kunden werden es lieben!
+                            </h2>
+
+                            <div className="row mt-5">
+                                <div className="col-md text-center">
+                                    <img className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621494227/photoshooted/devices-1-535281af_jr6zu1.webp" />
+                                </div>
+                                <div className="col-md text-center">
+                                    <h4 style={{ color: '#6852ed' }}>
+                                    Verschiedene Endgeräte – bei einheitlicher Leistungsstärke und Benutzeroberfläche.
+                                    </h4>
+                                    <center className="mt-5">
+                                        <a href="#!">Desktop</a> | <a href="#!"> Kamera </a> | <a href="#!">App</a>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }
+
+                
             </section>
 
 
             <section>
-                <div style={{ marginBottom: '100px', marginTop: '90px', maxWidth: '1360px' }} className="container">
-                    <div className="row">
-                        <div className="col-md">
-                            <h1 style={{ color: '#6852ed' }}>
-                            8,99€
-                            </h1>
+                {
+                    isBrowser ? (
+                        <div style={{ marginBottom: '100px', marginTop: '90px', maxWidth: '1360px' }} className="container">
+                            <div className="row">
+                                <div className="col-md">
+                                    <h1 style={{ color: '#6852ed' }}>
+                                    8,99€
+                                    </h1>
+                                </div>
+                                <div className="col-md mt-4">
+                                    <h4 style={{ color: '#6852ed' }}>
+                                    Teste noch heute unseren Service und lass dich begeistern.
+                                    </h4>
+                                </div>
+                                <div className="col-md">
+                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '20px' }} href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-md mt-4">
-                            <h4 style={{ color: '#6852ed' }}>
-                            Teste noch heute unseren Service und lass dich begeistern.
-                            </h4>
+                    ) : (
+                        <div style={{ marginBottom: '100px', marginTop: '90px', maxWidth: '1360px' }} className="container">
+                            <div className="row">
+                                <div className="col-md text-center">
+                                    <h2 style={{ color: '#6852ed' }}>
+                                    8,99€
+                                    </h2>
+                                </div>
+                                <div className="col-md mt-4 text-center">
+                                    <h4 style={{ color: '#6852ed' }}>
+                                    Teste noch heute unseren Service und lass dich begeistern.
+                                    </h4>
+                                </div>
+                                <div className="col-md">
+                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '20px' }} href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-md">
-                            <a style={{ borderRadius: '25px' }} href="/preise" class="main-btn disabled btn-block mt-4">
-                                Zu den Paketen
-                            </a>
-                        </div>
-                    </div>
-
-                    
-                    
-
-                    
-                </div>
+                    )
+                }
             </section>
 
 

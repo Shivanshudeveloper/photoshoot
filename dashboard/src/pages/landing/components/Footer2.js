@@ -12,7 +12,7 @@ const Footer2 = () => {
                                 <div class="copyright text-center">
                                 <ul>
                                     <li>
-                                        <Link className="text-light" to="/funktionen">
+                                        <Link style={{textDecoration: "none"}} className="text-light" to="/funktionen">
                                             Funktionen
                                         </Link>
                                     </li>
@@ -22,7 +22,7 @@ const Footer2 = () => {
                                     </li>
                                     
                                     <li>
-                                        <Link className="text-light" to="/preise">
+                                        <Link style={{textDecoration: "none"}} className="text-light" to="/preise">
                                             Preise
                                         </Link>
                                     </li>
@@ -32,7 +32,7 @@ const Footer2 = () => {
                                     </li>
 
                                     <li>
-                                        <Link className="text-light" to="/impressum-datenschutzerklaerung">
+                                        <Link style={{textDecoration: "none"}} className="text-light" to="/impressum-datenschutzerklaerung">
                                             Datenschutzerklärung
                                         </Link>
                                     </li>
@@ -43,7 +43,7 @@ const Footer2 = () => {
 
 
                                     <li>
-                                        <Link className="text-light" to="/cookie-richtlinie-eu">
+                                        <Link style={{textDecoration: "none"}} className="text-light" to="/cookie-richtlinie-eu">
                                             Cookie-Richtlinie
                                         </Link>
                                     </li>
@@ -55,7 +55,7 @@ const Footer2 = () => {
 
 
                                     <li>
-                                        <Link className="text-light" to="/impressum-datenschutzerklaerung">
+                                        <Link style={{textDecoration: "none"}} className="text-light" to="/impressum-datenschutzerklaerung">
                                             Impressum
                                         </Link>
                                     </li>
@@ -67,7 +67,7 @@ const Footer2 = () => {
 
 
                                     <li>
-                                        <Link className="text-light" to="/kontakt">
+                                        <Link style={{textDecoration: "none"}} className="text-light" to="/kontakt">
                                             Kontakt
                                         </Link>
                                     </li>
