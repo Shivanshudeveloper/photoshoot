@@ -68,7 +68,7 @@ const Funktionen = () => {
                     </div>
 
 
-                    <div style={{ marginTop: '280px' }} className="row">
+                    <div style={{ marginTop: '15%' }} className="row">
                         <div className="col-md">
                             <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg" />
                         </div>
@@ -85,7 +85,7 @@ const Funktionen = () => {
                     </div>
 
 
-                    <div style={{ marginTop: '280px' }} className="row">
+                    <div style={{ marginTop: '15%' }} className="row">
                         <div className="col-md">
                             <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493062/photoshooted/download_2_hqgw0l.svg" />
                             <h2 style={{ color: '#6852ed' }}>
@@ -104,21 +104,21 @@ const Funktionen = () => {
                 </div>
             </section>
 
-            <section style={{ marginBottom: '120px', marginTop: '80px' }} className="forprices">
+            <section className="forprices">
                 <div className="container">
                     <div className="row">
-                        <div style={{ marginBottom: '120px', marginTop: '120px' }} className="col-md">
+                        <div className="col-md" style={{padding: "5%"}}>
                             <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1620378009/photoshooted/Photoshooted_logo_white_bg96p5.png" />
                         </div>
 
-                        <div style={{ marginBottom: '120px', marginTop: '120px' }} className="col-md">
+                        <div className="col-md" style={{padding: "8%"}}>
                             <center>
                                 <p style={{ fontSize: '100px' }} className="text-light mt-5 ml-2">10%</p>
                                 <br />
                                 <br />
                                 <h4 className="text-light ml-2">Nur für kurze Zeit</h4>
                                 <br />
-                                <p style={{ marginLeft: '180px' }} className="text-light text-left">
+                                <p className="text-light text-left">
                                 Hol dir jetzt ein Abonnement über 6 Monate  und sichere dir 10 % Nachlass auf deine Monatsrechnung.
                                 </p>
 
@@ -244,7 +244,7 @@ const Funktionen = () => {
                         <div className="col-md">
                             <img className="serviceimg" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621494227/photoshooted/devices-1-535281af_jr6zu1.webp" />
                         </div>
-                        <div className="col-md">
+                        <div style={{margin: "5%"}} className="col-md">
                             <h2 style={{ color: '#6852ed' }}>
                             Verschiedene Endgeräte – bei einheitlicher Leistungsstärke und Benutzeroberfläche.
                             </h2>

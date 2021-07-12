@@ -5,10 +5,9 @@ const Footer = () => {
     return (
         <>
         <footer id="footer" className="footer-area">
-            <div className="copyright-area fixed-bottom">
+            <div className="copyright-area fixed-bottom" style={{zIndex: "auto"}}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-12">
                             <div className="copyright text-center">
                             <ul>
                                 <li>
@@ -75,7 +74,6 @@ const Footer = () => {
 
                             </ul>
                             </div>
-                        </div>
                     </div>
                     <div className="row mt-2">
                         <div className="col-lg-12">

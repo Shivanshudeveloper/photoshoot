@@ -166,7 +166,7 @@ const Preise = () => {
             </section>
 
             <section>
-                <div style={{ marginBottom: '50px', marginTop: '360px', maxWidth: '1360px' }} className="container">
+                <div style={{ marginBottom: '50px', marginTop: '10%', maxWidth: '1360px' }} className="container">
                     <h2 style={{ color: '#6852ed', fontWeight: 'normal' }}>
                         Übersicht aller
                         <br />

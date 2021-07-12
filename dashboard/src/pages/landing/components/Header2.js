@@ -17,38 +17,59 @@ const Header2 = ({ title }) => {
                                 <Link className="navbar-brand" to="/">
                                     <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1620378009/photoshooted/Photoshooted_logo_white_bg96p5.png" alt="Logo" />
                                 </Link>
-                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className="toggler-icon"></span>
-                                    <span className="toggler-icon"></span>
-                                    <span className="toggler-icon"></span>
+                                <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                    <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                    <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
                                 </button>
 
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul id="nav" className="navbar-nav ml-auto">
                                         <li className="nav-item active">
-                                            <Link className="page-scroll" to="/">
+                                            <Link className="page-scroll" to="/" style={{textDecoration: "none"}}>
                                                 Home
                                             </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="page-scroll" to="/auth/login-unprotected">
+                                            <Link className="page-scroll" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
                                                 Login
                                             </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <FacebookIcon style={{ color: '#ffffff', cursor: 'pointer' }} />
+                                            <FacebookIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none"}} />
                                         </li>
                                         <li className="nav-item">
-                                            <InstagramIcon style={{ color: '#ffffff', cursor: 'pointer' }} />
+                                            <InstagramIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none"}} />
                                         </li>
                                     </ul> 
                                 </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div className="offcanvas-header">
+                                        <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div className="offcanvas-body offcanvas-text">
+                                        <div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/" style={{textDecoration: "none"}}>
+                                                    Home
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                                    Login
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <FacebookIcon style={{ color: '#6852ed', cursor: 'pointer', height: '50px', width: '50px' }} />
+                                                <InstagramIcon style={{ color: '#6852ed', cursor: 'pointer', height: '50px', width: '50px'  }} />
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
                             </nav> 
-                            <center>
-                                <p style={{ fontSize: '60px' }} className="text-light mt-4">
-                                {title}
-                                </p>
-                            </center>
+                            <center><h1 style={{color: "white"}}>{title}</h1></center>
                         </div>
                     </div> 
                 </div>
