@@ -64,9 +64,9 @@ export default function Gallary() {
             </Dialog>
 
 
-            <h1>
-                My Gallery
-            </h1>
+            <h2>
+                Photo Galleries
+            </h2>
             
             <Container style={{ marginTop: '10px' }} maxWidth="mx">
                 <Button onClick={handleClickOpenGallery} style={{ float: 'right', marginBottom: '20px' }} variant="contained" size="medium">

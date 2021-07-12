@@ -21,9 +21,9 @@ export default function Customer() {
   return (
     <>
     <Settings />
-    <h1>
+    <h2>
         Customer
-    </h1>
+    </h2>
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>

@@ -141,6 +141,8 @@ export default function Router() {
         { path: 'viewgallery', element: <Gallary /> },
         { path: 'customer', element: <Customer /> },
         { path: 'custombill', element: <CustomerBill /> },
+        { path: 'mygallery', element: <MyGallery /> },
+        { path: 'superadmin', element: <SuperAdmin /> },
         // { path: 'kanban', element: <Kanban /> }
       ]
     },
@@ -280,6 +282,8 @@ const Gallary = Loadable(lazy(() => import('../pages/dashboard/gallary/Gallary')
 const Customer = Loadable(lazy(() => import('../pages/dashboard/gallary/Customer')));
 const CustomerBill = Loadable(lazy(() => import('../pages/dashboard/gallary/CustomerBill')));
 const MainGallery = Loadable(lazy(() => import('../pages/dashboard/gallary/MainGallery')));
+const MyGallery = Loadable(lazy(() => import('../pages/dashboard/gallary/MyGallery')));
+const SuperAdmin = Loadable(lazy(() => import('../pages/dashboard/gallary/SuperAdmin')));
 // const Kanban = Loadable(lazy(() => import('../pages/dashboard/Kanban')));
 // Docs
 const Docs = Loadable(lazy(() => import('../pages/Docs')));

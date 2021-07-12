@@ -5,9 +5,9 @@ export default function CustomerBill() {
     return (
         <>
             <Settings />
-            <h1>
+            <h2>
                 Bills
-            </h1>
+            </h2>
         </>
     )
 }

@@ -40,10 +40,10 @@ export default function AnalyticsWeeklySales() {
   return (
     <RootStyle>
       <IconWrapperStyle>
-        <Icon icon={androidFilled} width={24} height={24} />
+        <Icon style={{ color: '#fff' }} icon={androidFilled} width={24} height={24} />
       </IconWrapperStyle>
-      <Typography variant="h3">{fShortenNumber(TOTAL)}</Typography>
-      <Typography variant="subtitle2" sx={{ opacity: 0.72 }}>
+      <Typography style={{ color: '#fff' }} variant="h3">{fShortenNumber(TOTAL)}</Typography>
+      <Typography style={{ color: '#fff' }} variant="subtitle2" >
         Weekly Sales
       </Typography>
     </RootStyle>

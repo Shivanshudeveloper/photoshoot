@@ -113,6 +113,8 @@ const sidebarConfig = [
       { title: 'Profile', path: '/dashboard/user/account', icon: ICONS.user },
       { title: 'Customer', path: PATH_DASHBOARD.customer, icon: ICONS.users },
       { title: 'Customer Billing', path: PATH_DASHBOARD.custombill, icon: ICONS.user },
+      { title: 'My Gallery', path: '/dashboard/mygallery', icon: ICONS.docs },
+      { title: 'Super Admin', path: '/dashboard/superadmin', icon: ICONS.analytics },
     ]
   }
 ];
