@@ -29,7 +29,7 @@ const Header = () => {
                                             </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="page-scroll" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                            <Link className="page-scroll link" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
                                                 Login
                                             </Link>
                                         </li>
