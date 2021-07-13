@@ -96,7 +96,7 @@ const Home = () => {
                     {
                         isBrowser ? (
                             <center>
-                                <motion.div variants={varFadeInRight}>
+                                <motion.div variants={varFadeIn}>
                                     <h2 style={{ fontWeight: 'normal' }} className="text-light">Fotoalbum Code</h2>
                                     <hr className="forhr" />
                                         <InputBase
@@ -117,7 +117,7 @@ const Home = () => {
                             <center>
                                 <br />
                                 <br />
-                                <motion.div variants={varFadeInRight}>
+                                <motion.div variants={varFadeIn}>
                                     <h2 style={{ fontWeight: 'normal' }} className="text-light">Fotoalbum Code</h2>
                                     <hr className="forhr" />
                                         <InputBase
