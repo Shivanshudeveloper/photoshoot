@@ -9,6 +9,22 @@ import {
 import Header2 from '../components/Header2';
 import Footer2 from '../components/Footer2';
 
+import { experimentalStyled as styled } from '@material-ui/core/styles';
+import { motion } from 'framer-motion';
+import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
+
+const RootStyle = styled(motion.div)(({ theme }) => ({
+    position: 'relative',
+    [theme.breakpoints.up('md')]: {
+      top: 0,
+      left: 0,
+      width: '100%',
+      display: 'flex',
+    //   position: 'fixed',
+      alignItems: 'center'
+    }
+}));
+
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
@@ -51,12 +67,13 @@ const Funktionen = () => {
             </Helmet>
             <Header2 title="Funktionen" />
             
-
             <section>
+                <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <div style={{ marginBottom: '120px', marginTop: '80px', maxWidth: '1360px' }} className="container">
                     
                     {
                         isBrowser ? (
+                            <motion.div variants={varFadeInUp}>
                             <div className="row">
                                 <div className="col-md">
                                     <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492667/photoshooted/download_su8cdo.svg" />
@@ -72,7 +89,9 @@ const Funktionen = () => {
                                     <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="serviceimg" />
                                 </div>
                             </div>
+                            </motion.div>
                         ) : (
+                            <motion.div variants={varFadeInUp}>
                             <div className="row">
                                 <div className="col-md">
                                     <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="mb-4" />
@@ -91,6 +110,7 @@ const Funktionen = () => {
                                 </div>
                                 
                             </div>
+                            </motion.div>
                         )
                     }
                     
@@ -100,6 +120,7 @@ const Funktionen = () => {
 
                     {
                         isBrowser ? (
+                            <motion.div variants={varFadeInUp}>
                             <div style={{ marginTop: '15%' }} className="row">
                                 <div className="col-md">
                                     <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg" />
@@ -116,7 +137,9 @@ const Funktionen = () => {
                                     </p>
                                 </div>
                             </div>
+                            </motion.div>
                         ) : (
+                            <motion.div variants={varFadeInUp}>
                             <div style={{ marginTop: '15%' }} className="row">
                                 <div className="col-md">
                                     <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="mb-4" />
@@ -135,6 +158,7 @@ const Funktionen = () => {
                                     </p>
                                 </div>
                             </div>
+                            </motion.div>
                         )
                     }
 
@@ -142,6 +166,7 @@ const Funktionen = () => {
 
                     {
                         isBrowser ? (
+                            <motion.div variants={varFadeInUp}>
                             <div style={{ marginTop: '15%' }} className="row">
                                 <div className="col-md">
                                     <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493062/photoshooted/download_2_hqgw0l.svg" />
@@ -158,7 +183,9 @@ const Funktionen = () => {
                                     <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493015/photoshooted/servers-scaled-07e8bf15_ffeyuh.webp" className="serviceimg" />
                                 </div>
                             </div>
+                            </motion.div>
                         ) : (
+                            <motion.div variants={varFadeInUp}>
                             <div style={{ marginTop: '15%' }} className="row">
                                 <div className="col-md">
                                     <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621493015/photoshooted/servers-scaled-07e8bf15_ffeyuh.webp" className="mb-4" />
@@ -179,14 +206,12 @@ const Funktionen = () => {
                                     </p>
                                 </div>
                             </div>
+                            </motion.div>
                         )
                     }
 
-
-                    
-
-
                 </div>
+                </RootStyle>
             </section>
 
             <section className="forprices">
@@ -410,7 +435,6 @@ const Funktionen = () => {
                     )
                 }
             </section>
-
 
 
             <Footer2 />

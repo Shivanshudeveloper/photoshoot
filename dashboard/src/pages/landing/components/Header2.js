@@ -6,6 +6,19 @@ import {
     isBrowser
 } from "react-device-detect";
 
+import { experimentalStyled as styled } from '@material-ui/core/styles';
+import { motion } from 'framer-motion';
+import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
+
+const RootStyle = styled(motion.div)(({ theme }) => ({
+    position: 'relative',
+    [theme.breakpoints.up('md')]: {
+      top: 0,
+      left: 0,
+      width: '100%',
+      alignItems: 'center'
+    }
+}));
 
 const Header2 = ({ title }) => {
     return (
@@ -70,17 +83,23 @@ const Header2 = ({ title }) => {
                                         </div> 
                                     </div>
                                 </div>
-                            </nav> 
+                            </nav>
+                            <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                             <center>
                                 {
                                     isBrowser ? (
+                                        <motion.div variants={varFadeIn}>
                                         <h1 style={{ color: "white", fontWeight: '100' }}>{title}</h1>
+                                        </motion.div>
                                     ) : (
+                                        <motion.div variants={varFadeIn}>
                                         <h2 style={{color: "white", marginTop: '28px'}}>{title}</h2>
+                                        </motion.div>
                                     )
                                 }
                             
                             </center>
+                            </RootStyle>
                         </div>
                     </div> 
                 </div>

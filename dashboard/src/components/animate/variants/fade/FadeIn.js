@@ -3,11 +3,11 @@
 const DISTANCE = 120;
 
 const TRANSITION_ENTER = {
-  duration: 0.64,
+  duration: 1,
   ease: [0.73, 0.33, 0.43, 0.96]
 };
 const TRANSITION_EXIT = {
-  duration: 0.48,
+  duration: 0.75,
   ease: [0.43, 0.13, 0.23, 0.96]
 };
 

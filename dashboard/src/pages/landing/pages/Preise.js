@@ -5,20 +5,39 @@ import Button from '@material-ui/core/Button';
 import Header from '../components/Header';
 import Footer2 from '../components/Footer2';
 
+import { experimentalStyled as styled } from '@material-ui/core/styles';
+import { motion } from 'framer-motion';
+import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
+
+const RootStyle = styled(motion.div)(({ theme }) => ({
+    position: 'relative',
+    [theme.breakpoints.up('md')]: {
+      top: 0,
+      left: 0,
+      width: '100%',
+      alignItems: 'center'
+    }
+}));
+
 const Preise = () => {
     return (
         <>
             <section className="forprices">
                 <Header />
+                <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <center style={{ marginTop: '10%' }}>
+                <motion.div variants={varFadeInUp}>
                     <h1 style={{ fontWeight: '100' }} className="text-light">
                         Bei unseren Abos <br /> ist für jeden etwas dabei.
                     </h1>
+                </motion.div>
                 </center>
                 <br />
                 <div style={{ marginBottom: '50px', maxWidth: '1360px' }} className="container mt-5">
                     <div className="row">
+                                          
                         <div style={{ marginBottom: '100px' }} className="col-md">
+                        <motion.div variants={varFadeInUp} className="col-md">     
                             <div className="card card-body shadow">
                                 <h3 className="gb">5GB</h3>
                                 <div class="el-title uk-heading-large uk-margin-top uk-margin-remove-bottom">8,99<span class="uk-text-top uk-h3">€</span></div>
@@ -65,8 +84,10 @@ const Preise = () => {
                                 </center>
 
                             </div>
+                        </motion.div> 
                         </div>
                         <div style={{ marginBottom: '100px' }} className="col-md">
+                        <motion.div variants={varFadeInUp}>
                         <div className="card card-body shadow">
                                 <h3 className="gb">20GB</h3>
                                 <div class="el-title uk-heading-large uk-margin-top uk-margin-remove-bottom">18,99<span class="uk-text-top uk-h3">€</span></div>
@@ -113,8 +134,12 @@ const Preise = () => {
                                 </center>
 
                             </div>
+                        </motion.div>
                         </div>
+                        
+                        
                         <div style={{ marginBottom: '100px' }} className="col-md">
+                        <motion.div variants={varFadeInUp}>
                         <div className="card card-body shadow">
                                 <h3 className="gb">5GB</h3>
                                 <div class="el-title uk-heading-large uk-margin-top uk-margin-remove-bottom">89,99<span class="uk-text-top uk-h3">€</span></div>
@@ -160,19 +185,24 @@ const Preise = () => {
                                     <Button style={{ borderRadius: '25px', marginTop: '20px' }} size="large" fullWidth variant="contained">HOL DIR 1 MONAT GRATIS</Button>
                                 </center>
                             </div>
+                        </motion.div>
                         </div>
+                        
                     </div>
                 </div>
+                </RootStyle>
             </section>
 
             <section>
+                <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <div style={{ marginBottom: '50px', marginTop: '10%', maxWidth: '1360px' }} className="container">
+                    <motion.div variants={varFadeInUp}>
                     <h2 style={{ color: '#6852ed', fontWeight: 'normal' }}>
                         Übersicht aller
                         <br />
                         Funktionen
                     </h2>
-
+                    
                     <table style={{ color: '#5c5c5c' }} class="table table-borderless mt-5">
                     <thead>
                         <tr>
@@ -291,13 +321,17 @@ const Preise = () => {
                         
                     </tbody>
                     </table>
+                    </motion.div>
 
                     
                 </div>
+                </RootStyle>
             </section>
 
             <section>
+            <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <div style={{ marginBottom: '50px', marginTop: '80px', maxWidth: '1360px' }} className="container">
+                <motion.div variants={varFadeInUp}>
                     <h2 style={{ color: '#6852ed', fontWeight: 'normal' }}>
                         Frequently Asked
                         <br />
@@ -357,11 +391,15 @@ const Preise = () => {
                             </a>
                         </div>
                     </div>
+                </motion.div>
                 </div>
+            </RootStyle>
             </section>
 
             <section>
+            <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <div style={{ marginBottom: '120px', marginTop: '80px', maxWidth: '1360px' }} className="container">
+                <motion.div variants={varFadeInUp}>
                     <h2 style={{ color: '#6852ed', fontWeight: 'normal' }}>
                     Our Clients
                     </h2>
@@ -374,7 +412,9 @@ const Preise = () => {
                             <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621491187/photoshooted/pricing-clients-01_c1zibf.svg" />
                         </div>
                     </div>
+                </motion.div>
                 </div>
+            </RootStyle>
             </section>
 
             <Footer2 />
