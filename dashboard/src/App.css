@@ -136,4 +136,11 @@ table {
     background-size: cover;
 }
 
+.inp{
+    border: #7157E8 solid 2px !important;
+}
+.inp:focus{
+    border:  none !important;
+}
+
 

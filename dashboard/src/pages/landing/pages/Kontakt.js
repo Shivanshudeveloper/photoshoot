@@ -7,6 +7,20 @@ import Button from '@material-ui/core/Button';
 import Header2 from '../components/Header2';
 import Footer2 from '../components/Footer2';
 
+import { experimentalStyled as styled } from '@material-ui/core/styles';
+import { motion } from 'framer-motion';
+import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
+
+const RootStyle = styled(motion.div)(({ theme }) => ({
+    position: 'relative',
+    [theme.breakpoints.up('md')]: {
+      top: 0,
+      left: 0,
+      width: '100%',
+      alignItems: 'center'
+    }
+}));
+
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
@@ -51,40 +65,44 @@ const Kontakt = () => {
             
 
             <div className="container">
+            <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <div className="row">
                     <div style={{ marginTop: '16%' }} className="col-md">
+                    <motion.div variants={varFadeInUp}>
                         <h4 style={{ color: '#6852ed' }}>Photoshooted</h4>
                         <h6 className="mt-2" style={{ color: '#6852ed' }}>info(at)photoshooted.de</h6>
+                    </motion.div>
                     </div>
                     <div style={{ marginTop: '4%' }} className="col-md">
+                    <motion.div variants={varFadeInUp}>
                         <div class="contact-form">
                             <form id="contact-form" action="assets/contact.php" method="post" data-toggle="validator" novalidate="true">
                             <div class="row">
                             <div class="col-md-6">
                             <div class="single-form form-group has-error has-danger">
-                            <input type="text" name="name" placeholder="Your Name" data-error="Name is required." required="required" />
+                            <input className="inp" type="text" name="name" placeholder="Your Name" data-error="Name is required." required="required" />
                             </div> 
                             </div>
                             <div class="col-md-6">
                             <div class="single-form form-group has-error has-danger">
-                            <input type="email" name="email" placeholder="Your Email" data-error="Valid email is required." required="required" />
+                            <input className="inp" type="email" name="email" placeholder="Your Email" data-error="Valid email is required." required="required" />
                             </div> 
                             </div>
                             <div class="col-md-6">
                             <div class="single-form form-group">
-                            <input type="text" name="subject" placeholder="Subject" data-error="Subject is required." required="required" />
+                            <input className="inp" type="text" name="subject" placeholder="Subject" data-error="Subject is required." required="required" />
                             <div class="help-block with-errors"></div>
                             </div> 
                             </div>
                             <div class="col-md-6">
                             <div class="single-form form-group">
-                            <input type="text" name="phone" placeholder="Phone" data-error="Phone is required." required="required" />
+                            <input className="inp"  type="text" name="phone" placeholder="Phone" data-error="Phone is required." required="required" />
                             <div class="help-block with-errors"></div>
                             </div> 
                             </div>
                             <div class="col-md-12">
                             <div class="single-form form-group has-error has-danger">
-                            <textarea placeholder="Your Mesaage" name="message" data-error="Please,leave us a message." required="required"></textarea>
+                            <textarea className="inp" placeholder="Your Mesaage" name="message" data-error="Please,leave us a message." required="required"></textarea>
                             </div> 
                             </div>
                             <p class="form-message"></p>
@@ -96,8 +114,10 @@ const Kontakt = () => {
                             </div> 
                             </form>
                         </div>
+                    </motion.div>
                     </div>
                 </div>
+            </RootStyle>
             </div>
             <br />
             <br />
