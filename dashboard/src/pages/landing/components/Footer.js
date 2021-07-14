@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Grid from '@material-ui/core/Grid';
+
 import {
     isBrowser
 } from "react-device-detect";
 const Footer = () => {
     return (
         <>
-        <footer id="footer" className="footer-area">
+        <footer id="footer" className="footer-area ifooter">
             <div  className={isBrowser ? "copyright-area fixed-bottom" : "copyright-area mobilefooter"} style={{zIndex: "auto"}}>
                 <div className="container">
                     {
@@ -80,41 +82,43 @@ const Footer = () => {
                                 </div>
                             </div>
                         ) : (
-                            <div className="row text-center mb-5">
-                                <div className="col mt-3">
+                            // For Mobile
+                            <Grid className="mb-5 text-center" container spacing={3}>
+                                <Grid item xs={6} sm={6}>
                                     <Link style={{textDecoration: "none"}} className="text-light" to="/funktionen">
                                         Funktionen
                                     </Link>
-                                </div>
-                                <div className="col mt-3">
+                                </Grid>
+                                <Grid item xs={6} sm={6}>
                                     <Link style={{textDecoration: "none"}} className="text-light" to="/preise">
                                         Preise
                                     </Link>
-                                </div>
-                                <div className="col mt-3">
+                                </Grid>
+
+                                <Grid item xs={6} sm={6}>
                                     <Link style={{textDecoration: "none"}} className="text-light" to="/impressum-datenschutzerklaerung">
                                         Datenschutzerklärung
                                     </Link>
-                                </div>
-                                <div className="col mt-3">
+                                </Grid>
+
+                                <Grid item xs={6} sm={6}>
                                     <Link style={{textDecoration: "none"}} className="text-light" to="/cookie-richtlinie-eu">
                                         Cookie-Richtlinie
                                     </Link>
-                                </div>
-                                <div className="col mt-3">
+                                </Grid>
+
+                                <Grid item xs={6} sm={6}>
                                     <Link style={{textDecoration: "none"}} className="text-light" to="/impressum-datenschutzerklaerung">
                                         Impressum
                                     </Link>
-                                </div>
-                                <div className="col mt-3">
+                                </Grid>
+
+                                <Grid item xs={6} sm={6}>
                                     <Link style={{textDecoration: "none"}} className="text-light" to="/kontakt">
                                         Kontakt
                                     </Link>
-                                </div>
-                                
-
-                                
-                            </div>
+                                </Grid>
+                            </Grid>
                         )
                     }
                     

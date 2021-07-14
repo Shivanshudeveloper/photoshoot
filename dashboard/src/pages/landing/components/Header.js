@@ -59,10 +59,6 @@ const Header = () => {
                                                 </Link>
                                                 <br></br>
                                             </div>
-                                            <div style={{margin: "20px"}}>
-                                                <FacebookIcon style={{ color: '#6852ed', cursor: 'pointer', height: '50px', width: '50px' }} />
-                                                <InstagramIcon style={{ color: '#6852ed', cursor: 'pointer', height: '50px', width: '50px'  }} />
-                                            </div>
                                         </div> 
                                     </div>
                                 </div>

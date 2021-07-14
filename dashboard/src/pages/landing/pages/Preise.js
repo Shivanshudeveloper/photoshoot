@@ -9,6 +9,11 @@ import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { motion } from 'framer-motion';
 import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
 
+import {
+    isBrowser
+} from "react-device-detect";
+
+
 const RootStyle = styled(motion.div)(({ theme }) => ({
     position: 'relative',
     [theme.breakpoints.up('md')]: {
@@ -25,13 +30,30 @@ const Preise = () => {
             <section className="forprices">
                 <Header />
                 <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
-                <center style={{ marginTop: '10%' }}>
-                <motion.div variants={varFadeInUp}>
-                    <h1 style={{ fontWeight: '100' }} className="text-light">
-                        Bei unseren Abos <br /> ist für jeden etwas dabei.
-                    </h1>
-                </motion.div>
-                </center>
+
+                {
+                    isBrowser ? (
+                        <center style={{ marginTop: '10%' }}>
+                            <motion.div variants={varFadeInUp}>
+                                <h1 style={{ fontWeight: '100' }} className="text-light">
+                                    Bei unseren Abos <br /> ist für jeden etwas dabei.
+                                </h1>
+                            </motion.div>
+                        </center>
+                    ) : (
+                        <center style={{ marginTop: '25%' }}>
+                            <motion.div variants={varFadeInUp}>
+                                <h2 style={{ fontWeight: '100', fontSize: '50px' }} className="text-light">
+                                    Bei unseren Abos <br /> ist für jeden etwas dabei.
+                                </h2>
+                            </motion.div>
+                        </center>
+                    )
+                }
+
+                
+
+
                 <br />
                 <div style={{ marginBottom: '50px', maxWidth: '1360px' }} className="container mt-5">
                     <div className="row">

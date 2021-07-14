@@ -5,7 +5,7 @@
     src: url('./VarelaRound-Regular.ttf');
 }
 
-h1 ,h2 ,h3, h4, h5, h6, p {
+h1 ,h2 ,h3, h4, h5, h6, p, * {
     font-family: 'VarelaRound', sans-serif;
 }
 
@@ -128,13 +128,15 @@ table {
 
 
 .mobilefooter {
-    margin-top: 100px;
+    margin-top: 180px;
     background-image: url("https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621399609/photoshooted/background_lv9tfq.svg");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'VarelaRound', sans-serif;
 }
+
 
 .inp{
     border: #7157E8 solid 2px !important;
@@ -144,3 +146,10 @@ table {
 }
 
 
+.withheight {
+    height: '334px'
+}
+
+.removeheight {
+    height: 'auto'
+}

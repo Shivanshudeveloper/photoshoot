@@ -244,12 +244,24 @@ const Funktionen = () => {
 
             <section>
                 <div style={{ marginBottom: '50px', marginTop: '80px', maxWidth: '1360px' }} className="container">
-                    <h2 className="mb-5" style={{ color: '#6852ed' }}>
-                    Automatisiere deine Geschäftsabläufe als Profifotograf und mache dir das Leben leichter.
-                    </h2>
+                    {
+                        isBrowser ? (
+                            <h2 className="mb-5" style={{ color: '#6852ed' }}>
+                                Automatisiere deine Geschäftsabläufe als Profifotograf und mache dir das Leben leichter.
+                            </h2>
+                        ) : (
+                            <h2 className="mb-5 text-center" style={{ color: '#6852ed', fontSize: '30px' }}>
+                                Automatisiere deine Geschäftsabläufe als Profifotograf und mache dir das Leben leichter.
+                            </h2>
+                        )
+                    }
+                    
+                    
+                    
+
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow mt-4">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }} >
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655210/photoshooted/abzuege_kerpwl.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Fotoabzüge direkt online bestellen</h4>
@@ -258,7 +270,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621656123/photoshooted/rgb_u7gegz.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Farbechte Darstellung der Fotos</h4>
@@ -267,7 +279,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621656277/photoshooted/rgb_btxsmz.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Simple Kaufabwicklung</h4>
@@ -276,7 +288,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655210/photoshooted/code_jxa5ju.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Login über individuellem Fotoalbum Code</h4>
@@ -285,7 +297,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655215/photoshooted/zip_bvchv7.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Komprimierte Downloads</h4>
@@ -294,7 +306,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655210/photoshooted/auswahl_merene.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Selektion durch einfaches Markieren</h4>
@@ -303,7 +315,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655210/photoshooted/fastdownload_lfqtzh.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Schneller und unkomplizierter Upload</h4>
@@ -312,7 +324,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655212/photoshooted/raw_meov0j.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Alle Größen & Formate</h4>
@@ -321,7 +333,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655212/photoshooted/intime_iwq4wb.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Benachrichtigungen und Live Chat</h4>
@@ -330,7 +342,7 @@ const Funktionen = () => {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div style={{ height: '334px', padding: '30px' }} className="card card-body mt-4 shadow">
+                            <div className={isBrowser ? "card card-body mt-4 shadow mt-4 withheight" : "card card-body mt-4 shadow mt-4 removeheight"} style={{ padding: '30px' }}>
                                 <center>
                                     <img style={{ width: '80px' }} className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621655215/photoshooted/watermark_g2xy79.svg" />
                                     <h4 style={{ color: '#6852ed' }} >Wasserzeichen</h4>
@@ -339,6 +351,8 @@ const Funktionen = () => {
                             </div>
                         </div>
                     </div>
+
+
                 </div>
 
             </section>
@@ -349,6 +363,7 @@ const Funktionen = () => {
                 {
                     isBrowser ? (
                         <div style={{ marginBottom: '50px', marginTop: '80px', maxWidth: '1360px' }} className="container">
+                            
                             <h2 style={{ color: '#6852ed' }}>
                             Deine Kunden werden es lieben!
                             </h2>
@@ -369,7 +384,7 @@ const Funktionen = () => {
                         </div>
                     ) : (
                         <div style={{ marginBottom: '50px', marginTop: '80px', maxWidth: '1360px' }} className="container">
-                            <h2 style={{ color: '#6852ed' }}>
+                            <h2 className="text-center" style={{ color: '#6852ed', fontSize: '30px' }}>
                             Deine Kunden werden es lieben!
                             </h2>
 
@@ -377,8 +392,8 @@ const Funktionen = () => {
                                 <div className="col-md text-center">
                                     <img className="mb-4" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621494227/photoshooted/devices-1-535281af_jr6zu1.webp" />
                                 </div>
-                                <div className="col-md text-center">
-                                    <h4 style={{ color: '#6852ed' }}>
+                                <div className="col-md text-center mt-4">
+                                    <h4 style={{ color: '#6852ed', fontSize: '30px' }}>
                                     Verschiedene Endgeräte – bei einheitlicher Leistungsstärke und Benutzeroberfläche.
                                     </h4>
                                     <center className="mt-5">
@@ -423,12 +438,12 @@ const Funktionen = () => {
                                     </h2>
                                 </div>
                                 <div className="col-md mt-4 text-center">
-                                    <h4 style={{ color: '#6852ed' }}>
+                                    <h4 style={{ color: '#6852ed', fontSize: '30px' }}>
                                     Teste noch heute unseren Service und lass dich begeistern.
                                     </h4>
                                 </div>
                                 <div className="col-md">
-                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '20px' }} href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
+                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '40px' }} href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
                                 </div>
                             </div>
                         </div>

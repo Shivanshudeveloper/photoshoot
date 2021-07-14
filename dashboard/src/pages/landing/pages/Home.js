@@ -80,7 +80,6 @@ const Home = () => {
                         height: 100%;
                         margin: 0;
                         background-image: url("https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621399609/photoshooted/background_lv9tfq.svg");
-                        height: 100%; 
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
@@ -115,6 +114,7 @@ const Home = () => {
                             </center>
                         ) : (
                             <center>
+                                <br />
                                 <br />
                                 <br />
                                 <motion.div variants={varFadeIn}>
