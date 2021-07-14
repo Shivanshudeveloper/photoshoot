@@ -23,6 +23,8 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
 const Header2 = ({ title }) => {
     return (
         <>
+        {
+        isBrowser ? (
             <header id="home" className="header-area pt-100 curve">
             <div className="navigation-bar">
                 <div className="container">
@@ -101,6 +103,87 @@ const Header2 = ({ title }) => {
                 </div>
             </div> 
             </header>
+        ):(
+            <header id="home" className="header-area pt-100 curve2">
+            <div style={{backgroundColor: "white", padding: "0"}} className="navigation-bar">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <nav className="navbar navbar-expand-lg">
+                                <Link className="navbar-brand" to="/">
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1620378077/photoshooted/Photoshooted_A_u2hjii.png" alt="Logo" />
+                                </Link>
+                                <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span  className="toggler-icon"></span>
+                                    <span  className="toggler-icon"></span>
+                                    <span  className="toggler-icon"></span>
+                                </button>
+
+                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul id="nav" className="navbar-nav ml-auto">
+                                        <li className="nav-item active">
+                                            <Link className="page-scroll" to="/" style={{textDecoration: "none"}}>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="page-scroll" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                                Login
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <FacebookIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none"}} />
+                                        </li>
+                                        <li className="nav-item">
+                                            <InstagramIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none"}} />
+                                        </li>
+                                    </ul> 
+                                </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div className="offcanvas-header">
+                                        <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div className="offcanvas-body offcanvas-text">
+                                        <div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/" style={{textDecoration: "none"}}>
+                                                    Home
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                                    Login
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+                <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
+                    <center>
+                        {
+                            isBrowser ? (
+                                <motion.div variants={varFadeIn}>
+                                <h1 style={{ color: "white", fontWeight: '100' }}>{title}</h1>
+                                </motion.div>
+                            ) : (
+                                <motion.div variants={varFadeIn}>
+                                <h2 style={{color: "white", marginTop: '28px'}}>{title}</h2>
+                                </motion.div>
+                            )
+                        }
+                            
+                    </center>
+                </RootStyle>
+            </header>
+        )
+        }
         </>
     )
 }

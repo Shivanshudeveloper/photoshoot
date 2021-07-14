@@ -26,7 +26,7 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
 
 const Preise = () => {
     return (
-        <>
+        <div style={{overflowX: "hidden"}}>
             <section className="forprices">
                 <Header />
                 <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
@@ -224,7 +224,8 @@ const Preise = () => {
                         <br />
                         Funktionen
                     </h2>
-                    
+
+                    <div style={{overflowX: "scroll"}}>
                     <table style={{ color: '#5c5c5c' }} class="table table-borderless mt-5">
                     <thead>
                         <tr>
@@ -343,6 +344,7 @@ const Preise = () => {
                         
                     </tbody>
                     </table>
+                    </div>
                     </motion.div>
 
                     
@@ -440,7 +442,7 @@ const Preise = () => {
             </section>
 
             <Footer2 />
-        </>
+        </div>
     )
 }
 

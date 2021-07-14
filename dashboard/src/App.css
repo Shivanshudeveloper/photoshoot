@@ -153,3 +153,12 @@ table {
 .removeheight {
     height: 'auto'
 }
+
+.curve2 {
+    position: relative;
+    height: 225px;
+    background-image: url(https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621399609/photoshooted/background_lv9tfq.svg);
+    width: 100%;
+    /* margin-left: -2em; */
+    padding-right: 2em;
+}
