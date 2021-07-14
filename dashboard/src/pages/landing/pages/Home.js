@@ -14,7 +14,7 @@ import {
 } from "react-device-detect";
 // Components
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer_ from '../components/Footer_';
 
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
@@ -73,7 +73,7 @@ const Home = () => {
 
 
     return (
-        <>
+        <div style={{overflowY: "scroll"}}>
             <Helmet>
                 <style type="text/css">{`
                     body, html {
@@ -139,8 +139,8 @@ const Home = () => {
                 </div>
             </RootStyle>
 
-            <Footer />
-        </>
+            <Footer_ />
+        </div>
     )
 }
 

@@ -128,7 +128,7 @@ table {
 
 
 .mobilefooter {
-    margin-top: 180px;
+    /* margin-top: 180px; */
     background-image: url("https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621399609/photoshooted/background_lv9tfq.svg");
     height: 100%; 
     background-position: center;
