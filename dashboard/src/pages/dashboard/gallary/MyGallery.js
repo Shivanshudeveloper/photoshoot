@@ -81,7 +81,7 @@ export default function MyGallary() {
             </Dialog>
 
 
-            <h2>
+            <h2 className="forheadingscolors">
                 My Galleries
             </h2>
             

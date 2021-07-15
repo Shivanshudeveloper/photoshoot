@@ -37,7 +37,7 @@ export default function Gallary() {
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
             >
-                <DialogTitle id="alert-dialog-title">
+                <DialogTitle className="forheadingscolors" id="alert-dialog-title">
                 New gallery
                 </DialogTitle>
                 <DialogContent>
@@ -64,7 +64,7 @@ export default function Gallary() {
             </Dialog>
 
 
-            <h2>
+            <h2 className="forheadingscolors">
                 Photo Galleries
             </h2>
             

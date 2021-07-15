@@ -84,7 +84,7 @@ export default function Login() {
         <ContentStyle>
           <Stack direction="row" alignItems="center" sx={{ mb: 5 }}>
             <Box style={{textAlign: 'center', color: 'rgb(104, 82, 237)'}} sx={{ flexGrow: 1 }}>
-              <Typography style={{fontFamily: "'Varela Round', sans-serif"}} variant="h4" gutterBottom>
+              <Typography className="forheadingscolors" style={{fontFamily: "'Varela Round', sans-serif"}} variant="h4" gutterBottom>
                 Sign in to Photoshooted
               </Typography>
               <Typography style={{ fontFamily: "VarelaRound" }} sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>

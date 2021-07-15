@@ -37,7 +37,7 @@ export default function ResetPassword() {
         <Box sx={{ maxWidth: 480, mx: 'auto' }}>
           {!sent ? (
             <>
-              <Typography style={{ fontFamily: "VarelaRound" }} variant="h3" paragraph>
+              <Typography className="forheadingscolors" style={{ fontFamily: "VarelaRound" }} variant="h3" paragraph>
                 Forgot your password?
               </Typography>
               <Typography style={{ fontFamily: "VarelaRound" }} sx={{ color: 'text.secondary', mb: 5 }}>

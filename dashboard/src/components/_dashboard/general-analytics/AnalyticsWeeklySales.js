@@ -42,8 +42,8 @@ export default function AnalyticsWeeklySales() {
       <IconWrapperStyle>
         <Icon style={{ color: '#fff' }} icon={androidFilled} width={24} height={24} />
       </IconWrapperStyle>
-      <Typography style={{ color: '#fff' }} variant="h3">{fShortenNumber(TOTAL)}</Typography>
-      <Typography style={{ color: '#fff' }} variant="subtitle2" >
+      <Typography className="forheadingscolors" style={{ color: '#fff' }} variant="h3">{fShortenNumber(TOTAL)}</Typography>
+      <Typography className="forheadingscolors" style={{ color: '#fff' }} variant="subtitle2" >
         Weekly Sales
       </Typography>
     </RootStyle>

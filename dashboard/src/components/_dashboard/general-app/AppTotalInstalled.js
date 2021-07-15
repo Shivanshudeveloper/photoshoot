@@ -50,7 +50,7 @@ export default function AppTotalInstalled() {
   return (
     <Card sx={{ display: 'flex', alignItems: 'center', p: 3 }}>
       <Box sx={{ flexGrow: 1 }}>
-        <Typography variant="subtitle2">Total Installed</Typography>
+        <Typography className="forheadingscolors" variant="subtitle2">Total Installed</Typography>
 
         <Stack direction="row" alignItems="center" spacing={1} sx={{ mt: 2, mb: 1 }}>
           <IconWrapperStyle
@@ -63,13 +63,13 @@ export default function AppTotalInstalled() {
           >
             <Icon width={16} height={16} icon={PERCENT >= 0 ? trendingUpFill : trendingDownFill} />
           </IconWrapperStyle>
-          <Typography component="span" variant="subtitle2">
+          <Typography className="forheadingscolors" component="span" variant="subtitle2">
             {PERCENT > 0 && '+'}
             {fPercent(PERCENT)}
           </Typography>
         </Stack>
 
-        <Typography variant="h3">{fNumber(TOTAL_INSTALLED)}</Typography>
+        <Typography className="forheadingscolors" variant="h3">{fNumber(TOTAL_INSTALLED)}</Typography>
       </Box>
 
       <ReactApexChart type="bar" series={CHART_DATA} options={chartOptions} width={60} height={36} />

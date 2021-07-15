@@ -156,7 +156,7 @@ export default function Gallary() {
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
             >
-                <DialogTitle id="alert-dialog-title">
+                <DialogTitle className="forheadingscolors" id="alert-dialog-title">
                     Upload Photograph
                 </DialogTitle>
                 <DialogContent>

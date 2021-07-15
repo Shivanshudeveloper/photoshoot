@@ -24,7 +24,7 @@ export default function SuperAdmin() {
     <Page title="Super Admin Dashboard">
       <Container maxWidth="xl">
         <Box sx={{ pb: 5 }}>
-          <Typography variant="h4">Super Admin</Typography>
+          <Typography className="forheadingscolors" variant="h4">Super Admin</Typography>
         </Box>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
@@ -48,7 +48,7 @@ export default function SuperAdmin() {
             <AnalyticsCurrentVisits />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={8}>
+          {/* <Grid item xs={12} md={6} lg={8}>
             <AnalyticsConversionRates />
           </Grid>
 
@@ -70,7 +70,7 @@ export default function SuperAdmin() {
 
           <Grid item xs={12} md={6} lg={8}>
             <AnalyticsTasks />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Page>

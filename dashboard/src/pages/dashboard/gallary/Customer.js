@@ -21,7 +21,7 @@ export default function Customer() {
   return (
     <>
     <Settings />
-    <h2>
+    <h2 className="forheadingscolors">
         Customer
     </h2>
     <TableContainer component={Paper}>

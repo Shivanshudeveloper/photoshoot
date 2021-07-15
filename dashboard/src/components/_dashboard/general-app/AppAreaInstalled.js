@@ -41,6 +41,7 @@ export default function AppAreaInstalled() {
   return (
     <Card>
       <CardHeader
+        className="forheadingscolors"
         title="Area Installed"
         subheader="(+43%) than last year"
         action={

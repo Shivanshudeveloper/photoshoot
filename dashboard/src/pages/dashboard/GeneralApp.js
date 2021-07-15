@@ -31,14 +31,6 @@ export default function GeneralApp() {
       <Settings />
       <Container maxWidth="xl">
         <Grid container spacing={3}>
-          <Grid item xs={12} md={8}>
-            <AppWelcome displayName={user.displayName} />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <AppFeatured />
-          </Grid>
-
           <Grid item xs={12} md={4}>
             <AppTotalActiveUsers />
           </Grid>
@@ -59,7 +51,7 @@ export default function GeneralApp() {
             <AppAreaInstalled />
           </Grid>
 
-          <Grid item xs={12} lg={8}>
+          {/* <Grid item xs={12} lg={8}>
             <AppNewInvoice />
           </Grid>
 
@@ -84,7 +76,7 @@ export default function GeneralApp() {
                 <AppWidgets2 />
               </Grid>
             </Grid>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Page>

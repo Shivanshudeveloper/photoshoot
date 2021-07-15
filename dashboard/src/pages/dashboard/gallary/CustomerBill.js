@@ -5,7 +5,7 @@ export default function CustomerBill() {
     return (
         <>
             <Settings />
-            <h2>
+            <h2 className="forheadingscolors">
                 Bills
             </h2>
         </>
