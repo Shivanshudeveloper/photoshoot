@@ -73,7 +73,7 @@ const Home = () => {
 
 
     return (
-        <div style={{overflowY: "scroll"}}>
+        <div>
             <Helmet>
                 <style type="text/css">{`
                     body, html {
@@ -89,7 +89,8 @@ const Home = () => {
             </Helmet>
             
             <Header />
-                
+
+            <section style={{overflowY: "scroll"}}>
             <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
                 <div className="container mainpagecontainer">
                     {
@@ -138,6 +139,7 @@ const Home = () => {
                     }
                 </div>
             </RootStyle>
+            </section>
 
             <Footer_ />
         </div>

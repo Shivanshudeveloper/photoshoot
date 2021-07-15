@@ -129,6 +129,7 @@ const Footer_ = () => {
                             </div>
                         </div>
                     </div>
+                    <br />
                 </div> 
             </div>
         </footer>
