@@ -425,7 +425,7 @@ const Funktionen = () => {
                                     </h4>
                                 </div>
                                 <div className="col-md">
-                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '20px' }} href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
+                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '20px' }} className="uk-button-primary" href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
                                 </div>
                             </div>
                         </div>
@@ -443,7 +443,7 @@ const Funktionen = () => {
                                     </h4>
                                 </div>
                                 <div className="col-md">
-                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '40px' }} href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
+                                    <Button style={{ borderRadius: '25px', color: '#ffffff', marginTop: '40px' }} className="uk-button-primary" href="/preise" size="large" fullWidth variant="contained">Zu den Paketen</Button>
                                 </div>
                             </div>
                         </div>

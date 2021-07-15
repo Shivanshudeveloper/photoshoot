@@ -30,17 +30,17 @@ export default function ResetPassword() {
   const [sent, setSent] = useState(false);
 
   return (
-    <RootStyle title="Reset Password | Minimal UI">
+    <RootStyle title="Photoshooted | Reset Password">
       <LogoOnlyLayout />
 
       <Container>
         <Box sx={{ maxWidth: 480, mx: 'auto' }}>
           {!sent ? (
             <>
-              <Typography variant="h3" paragraph>
+              <Typography style={{ fontFamily: "VarelaRound" }} variant="h3" paragraph>
                 Forgot your password?
               </Typography>
-              <Typography sx={{ color: 'text.secondary', mb: 5 }}>
+              <Typography style={{ fontFamily: "VarelaRound" }} sx={{ color: 'text.secondary', mb: 5 }}>
                 Please enter the email address associated with your account and We will email you a link to reset your
                 password.
               </Typography>

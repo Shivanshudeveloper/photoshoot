@@ -102,7 +102,7 @@ const Preise = () => {
                                 </span>
                                 
                                 <center>
-                                    <Button style={{ borderRadius: '25px', marginTop: '20px' }} size="large" fullWidth variant="contained">HOL DIR 1 MONAT GRATIS</Button>
+                                    <Button style={{ borderRadius: '25px', marginTop: '20px' }} className="uk-button-primary" size="large" fullWidth variant="contained">HOL DIR 1 MONAT GRATIS</Button>
                                 </center>
 
                             </div>
@@ -152,7 +152,7 @@ const Preise = () => {
                                 </span>
                                 
                                 <center>
-                                    <Button style={{ borderRadius: '25px', marginTop: '20px' }} size="large" fullWidth variant="contained">HOL DIR 1 MONAT GRATIS</Button>
+                                    <Button style={{ borderRadius: '25px', marginTop: '20px' }} className="uk-button-primary" size="large" fullWidth variant="contained">HOL DIR 1 MONAT GRATIS</Button>
                                 </center>
 
                             </div>
@@ -204,7 +204,7 @@ const Preise = () => {
                                 </span>
                                 
                                 <center>
-                                    <Button style={{ borderRadius: '25px', marginTop: '20px' }} size="large" fullWidth variant="contained">HOL DIR 1 MONAT GRATIS</Button>
+                                    <Button style={{ borderRadius: '25px', marginTop: '20px' }} className="uk-button-primary" size="large" fullWidth variant="contained">HOL DIR 1 MONAT GRATIS</Button>
                                 </center>
                             </div>
                         </motion.div>
@@ -225,7 +225,7 @@ const Preise = () => {
                         Funktionen
                     </h2>
 
-                    <div style={{overflowX: "scroll"}}>
+                    <div  style={!isBrowser ? {overflowX: "scroll"} : null}  >
                     <table style={{ color: '#5c5c5c' }} class="table table-borderless mt-5">
                     <thead>
                         <tr>

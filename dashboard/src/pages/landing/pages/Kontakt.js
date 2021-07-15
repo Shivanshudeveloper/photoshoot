@@ -108,7 +108,7 @@ const Kontakt = () => {
                             <p class="form-message"></p>
                             <div class="col-md-12">
                             <div class="single-form form-group text-center">
-                                <Button style={{ borderRadius: '25px' }} size="large" variant="contained">SEND MESSAGE</Button>
+                                <Button style={{ borderRadius: '25px' }} className="uk-button-primary" size="large" variant="contained">SEND MESSAGE</Button>
                             </div> 
                             </div>
                             </div> 

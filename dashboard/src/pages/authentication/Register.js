@@ -58,8 +58,10 @@ export default function Register() {
     <RootStyle title="Register | Photoshooted">
       <Settings />
       <AuthLayout>
-        Already have an account? &nbsp;
-        <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.login}>
+        <span style={{ fontFamily: "VarelaRound" }}>
+          Already have an account? &nbsp;
+        </span>
+        <Link style={{ fontFamily: "VarelaRound" }} underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.login}>
           Login
         </Link>
       </AuthLayout>
@@ -77,7 +79,7 @@ export default function Register() {
               <Typography style={{fontFamily: "'Varela Round', sans-serif"}} variant="h4" gutterBottom>
                 Get started absolutely free.
               </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>Free forever. No credit card needed.</Typography>
+              <Typography style={{ fontFamily: "VarelaRound" }} sx={{ color: 'text.secondary' }}>Free forever. No credit card needed.</Typography>
             </Box>
             {/* <Tooltip title={(method === 'firebase' && 'Firebase') || (method === 'cognito' && 'Cognito') || 'JWT'}>
               <Box
@@ -95,7 +97,7 @@ export default function Register() {
           <RegisterForm />
 
           <Typography variant="body2" align="center" sx={{ color: 'text.secondary', mt: 3 }}>
-            By registering, I agree to Minimal&nbsp;
+            By registering, I agree to Photoshooted&nbsp;
             <Link underline="always" sx={{ color: 'text.primary' }}>
               Terms of Service
             </Link>

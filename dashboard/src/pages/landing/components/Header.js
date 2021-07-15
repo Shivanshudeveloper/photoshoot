@@ -34,6 +34,21 @@ const Header = () => {
                                                 Home
                                             </Link>
                                         </li>
+                                        <li className="nav-item active">
+                                            <Link className="page-scroll" to="/funktionen" style={{textDecoration: "none"}}>
+                                                Funktionen
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item active">
+                                            <Link className="page-scroll" to="/preise" style={{textDecoration: "none"}}>
+                                                Preise
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item active">
+                                            <Link className="page-scroll" to="/kontakt" style={{textDecoration: "none"}}>
+                                                Kontakt
+                                            </Link>
+                                        </li>
                                         <li className="nav-item">
                                             <Link className="page-scroll link" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
                                                 Login
@@ -56,6 +71,24 @@ const Header = () => {
                                             <div style={{margin: "20px"}}>
                                                 <Link className="h1" to="/" style={{textDecoration: "none"}}>
                                                     Home
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/funktionen" style={{textDecoration: "none"}}>
+                                                    Funktionen
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/preise" style={{textDecoration: "none"}}>
+                                                    Preise
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/kontakt" style={{textDecoration: "none"}}>
+                                                    Kontakt
                                                 </Link>
                                                 <br></br>
                                             </div>
@@ -99,6 +132,22 @@ const Header = () => {
                                                 Home
                                             </Link>
                                         </li>
+                                        
+                                        <li className="nav-item active">
+                                            <Link className="page-scroll" to="/funktionen" style={{textDecoration: "none"}}>
+                                                Funktionen
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item active">
+                                            <Link className="page-scroll" to="/preise" style={{textDecoration: "none"}}>
+                                                Preise
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item active">
+                                            <Link className="page-scroll" to="/kontakt" style={{textDecoration: "none"}}>
+                                                Kontakt
+                                            </Link>
+                                        </li>
                                         <li className="nav-item">
                                             <Link className="page-scroll link" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
                                                 Login
@@ -121,6 +170,24 @@ const Header = () => {
                                             <div style={{margin: "20px"}}>
                                                 <Link className="h1" to="/" style={{textDecoration: "none"}}>
                                                     Home
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/funktionen" style={{textDecoration: "none"}}>
+                                                    Funktionen
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/preise" style={{textDecoration: "none"}}>
+                                                    Preise
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link className="h1" to="/kontakt" style={{textDecoration: "none"}}>
+                                                    Kontakt
                                                 </Link>
                                                 <br></br>
                                             </div>

@@ -66,8 +66,10 @@ export default function Login() {
     <RootStyle title="Login | Photoshooted">
       <Settings />
       <AuthLayout>
-        Don’t have an account? &nbsp;
-        <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.register}>
+        <span style={{ fontFamily: "VarelaRound" }}>
+          Don’t have an account? &nbsp;
+        </span>
+        <Link style={{ fontFamily: "VarelaRound" }} underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.register}>
           Get started
         </Link>
       </AuthLayout>
@@ -85,7 +87,7 @@ export default function Login() {
               <Typography style={{fontFamily: "'Varela Round', sans-serif"}} variant="h4" gutterBottom>
                 Sign in to Photoshooted
               </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>
+              <Typography style={{ fontFamily: "VarelaRound" }} sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>
             </Box>
           </Stack>
 
