@@ -1,2 +1,0 @@
-(this["webpackJsonp@minimal/material-kit-react"]=this["webpackJsonp@minimal/material-kit-react"]||[]).push([[145],{4276:function(t,i,e){"use strict";e.r(i),e.d(i,"default",(function(){return r}));e(1);var n=e(306),a=e(0);function r(){return Object(a.jsxs)(a.Fragment,{children:[Object(a.jsx)(n.a,{}),Object(a.jsx)("h2",{children:"Bills"})]})}}}]);
-//# sourceMappingURL=145.c7c133b6.chunk.js.map
