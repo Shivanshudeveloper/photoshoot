@@ -29,7 +29,7 @@ const Header = () => {
 
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul id="nav" className="navbar-nav ml-auto">
-                                        <li className="nav-item active">
+                                        {/* <li className="nav-item active">
                                             <Link className="page-scroll" to="/" style={{textDecoration: "none"}}>
                                                 Home
                                             </Link>
@@ -53,47 +53,54 @@ const Header = () => {
                                             <Link className="page-scroll link" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
                                                 Login
                                             </Link>
-                                        </li>
+                                        </li> */}
                                         <li className="nav-item">
                                             <FacebookIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none" }} />
                                         </li>
                                         <li className="nav-item">
                                             <InstagramIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none" }} />
                                         </li>
+                                        <li>
+                                        <button style={{display: "block", padding: "0"}} className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                            <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                            <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                        </button>       
+                                        </li>
                                     </ul> 
                                 </div>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div  style={{textAlign: "center"}} class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div className="offcanvas-header">
                                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
-                                    <div className="offcanvas-body offcanvas-text">
+                                    <div className="offcanvas-body offcanvas-text" style={{fontSize: "18px"}}>
                                         <div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/" style={{textDecoration: "none"}}>
+                                                <Link to="/" style={{textDecoration: "none"}}>
                                                     Home
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/funktionen" style={{textDecoration: "none"}}>
+                                                <Link to="/funktionen" style={{textDecoration: "none"}}>
                                                     Funktionen
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/preise" style={{textDecoration: "none"}}>
+                                                <Link to="/preise" style={{textDecoration: "none"}}>
                                                     Preise
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/kontakt" style={{textDecoration: "none"}}>
+                                                <Link to="/kontakt" style={{textDecoration: "none"}}>
                                                     Kontakt
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                                <Link  to="/auth/login-unprotected" style={{textDecoration: "none"}}>
                                                     Login
                                                 </Link>
                                                 <br></br>

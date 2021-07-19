@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 // Components
 import Header from '../components/Header';
 import Footer2 from '../components/Footer2';
+import Footer from './Footer';
 
 import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { motion } from 'framer-motion';
@@ -441,7 +442,7 @@ const Preise = () => {
             </RootStyle>
             </section>
 
-            <Footer2 />
+            <Footer />
         </div>
     )
 }

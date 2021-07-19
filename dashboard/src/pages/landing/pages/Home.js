@@ -15,6 +15,7 @@ import {
 // Components
 import Header from '../components/Header';
 import Footer_ from '../components/Footer_';
+import Footer from './Footer'
 
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
@@ -73,7 +74,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div style={{height: "100vh", width: "100vw"}}>
             <Helmet>
                 <style type="text/css">{`
                     body, html {
@@ -140,8 +141,9 @@ const Home = () => {
                 </div>
             </RootStyle>
             </section>
-
-            <Footer_ />
+            <div style={{position: 'fixed', bottom: "0px", width: "100%"}}>
+                <Footer />
+            </div>
         </div>
     )
 }

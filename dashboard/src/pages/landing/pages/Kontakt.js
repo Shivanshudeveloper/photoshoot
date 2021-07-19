@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 
 import Header2 from '../components/Header2';
 import Footer2 from '../components/Footer2';
+import Footer from './Footer';
 
 import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { motion } from 'framer-motion';
@@ -124,7 +125,7 @@ const Kontakt = () => {
             <br />
             <br />
             <br />
-            <Footer2 />
+            <Footer />
         </>
     )
 }

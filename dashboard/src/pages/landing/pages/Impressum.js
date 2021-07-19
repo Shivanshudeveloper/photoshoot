@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Header2 from '../components/Header2';
 import Footer2 from '../components/Footer2';
+import Footer from './Footer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -130,7 +131,7 @@ const Impressum = () => {
 
                 </span>
             </div>
-            <Footer2 />
+            <Footer/>
         </>
     )
 }
