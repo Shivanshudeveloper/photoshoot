@@ -69,38 +69,38 @@ const Header = () => {
                                         </li>
                                     </ul> 
                                 </div>
-                                <div  style={{textAlign: "center"}} class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div  style={{textAlign: "center"}} class="offcanvas offcanvas-end menu-bg" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div className="offcanvas-header">
                                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div className="offcanvas-body offcanvas-text" style={{fontSize: "18px"}}>
                                         <div>
                                             <div style={{margin: "20px"}}>
-                                                <Link to="/" style={{textDecoration: "none"}}>
+                                                <Link to="/" style={{textDecoration: "none", color: "white"}}>
                                                     Home
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link to="/funktionen" style={{textDecoration: "none"}}>
+                                                <Link to="/funktionen" style={{textDecoration: "none", color: "white"}}>
                                                     Funktionen
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link to="/preise" style={{textDecoration: "none"}}>
+                                                <Link to="/preise" style={{textDecoration: "none", color: "white"}}>
                                                     Preise
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link to="/kontakt" style={{textDecoration: "none"}}>
+                                                <Link to="/kontakt" style={{textDecoration: "none", color: "white"}}>
                                                     Kontakt
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link  to="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                                <Link  to="/auth/login-unprotected" style={{textDecoration: "none", color: "white"}}>
                                                     Login
                                                 </Link>
                                                 <br></br>
