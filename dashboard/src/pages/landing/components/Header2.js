@@ -217,43 +217,61 @@ const Header2 = ({ title }) => {
                                         </li>
                                     </ul> 
                                 </div>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div style={{textAlign: 'center'}} class="offcanvas offcanvas-end menu-bg" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div className="offcanvas-header">
                                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div className="offcanvas-body offcanvas-text">
                                         <div>
                                             <div style={{margin: "20px"}}>
-                                                <a className="h1" href="/" style={{textDecoration: "none"}}>
+                                                <a href="/" style={{textDecoration: "none", color: "white"}}>
                                                     Home
                                                 </a>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <a className="h1" href="/funktionen" style={{textDecoration: "none"}}>
+                                                <a href="/funktionen" style={{textDecoration: "none", color: "white"}}>
                                                     Funktionen
                                                 </a>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <a className="h1" href="/preise" style={{textDecoration: "none"}}>
+                                                <a href="/preise" style={{textDecoration: "none", color: "white"}}>
                                                     Preise
                                                 </a>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <a className="h1" href="/kontakt" style={{textDecoration: "none"}}>
-                                                    Kontakt
-                                                </a>
-                                                <br></br>
-                                            </div>
-                                            <div style={{margin: "20px"}}>
-                                                <a className="h1" href="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                                <a  href="/auth/login-unprotected" style={{textDecoration: "none", color: "white"}}>
                                                     Login
                                                 </a>
                                                 <br></br>
                                             </div>
-                                        </div> 
+                                            <div style={{margin: "20px"}}>
+                                                <a  href="/kontakt" style={{textDecoration: "none", color: "white"}}>
+                                                    Kontact
+                                                </a>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <a  href="/agb" style={{textDecoration: "none", color: "white"}}>
+                                                    AGB
+                                                </a>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <a  href="/cookie-richtlinie-eu" style={{textDecoration: "none", color: "white"}}>
+                                                    Cookie-Richtlinie
+                                                </a>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <a  href="/cookie-richtlinie-eu" style={{textDecoration: "none", color: "white"}}>
+                                                    Impressum
+                                                </a>
+                                                <br></br>
+                                            </div>
+                                        </div>  
                                     </div>
                                 </div>
                             </nav>

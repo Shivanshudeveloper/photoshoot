@@ -122,7 +122,7 @@ const Home = () => {
                                 <motion.div variants={varFadeIn}>
                                     <h2 style={{ fontWeight: 'normal' }} className="text-light">Fotoalbum Code</h2>
                                     <hr className="forhr" />
-                                        <InputBase
+                                        {/* <InputBase
                                             className={classes.input}
                                             placeholder="XXXXXX"
                                             onKeyDown={checkCode}
@@ -132,7 +132,8 @@ const Home = () => {
                                         />
                                         <IconButton type="button" className={classes.iconButton} aria-label="search">
                                             <LockIcon style={{ color: '#ffffff' }} />
-                                        </IconButton>
+                                        </IconButton> */}
+                                        <VerifyCodeForm />
                                     <h4 style={{ fontWeight: 'normal' }} className="text-light mt-5">Gib hier deinen Code ein und bestätige mit Enter.</h4>
                                 </motion.div>
                             </center>
