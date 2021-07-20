@@ -75,7 +75,6 @@ export default function VerifyCodeForm() {
               type="number"
               placeholder="-"
               onInput={maxLength}
-              error={Boolean(touched[item] && errors[item])}
               inputProps={{
                 maxLength: 1,
                 sx: {
