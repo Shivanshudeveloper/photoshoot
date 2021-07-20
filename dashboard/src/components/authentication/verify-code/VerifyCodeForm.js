@@ -93,9 +93,9 @@ export default function VerifyCodeForm() {
           {!isValid && 'Code is required'}
         </FormHelperText> */}
 
-        {/* <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={isSubmitting} sx={{ mt: 3 }}>
-          Verify
-        </LoadingButton> */}
+        <LoadingButton className ="uk-button-primary" style={{width: '35%'}} size="large" type="submit" variant="contained" loading={isSubmitting} sx={{ mt: 3}}>
+          Submit
+        </LoadingButton>
       </Form>
     </FormikProvider>
     </div>

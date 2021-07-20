@@ -111,9 +111,6 @@ const Home = () => {
                                             inputProps={{ 'aria-label': 'XXXXXX' }}
                                         /> */}
                                         <VerifyCodeForm />
-                                        <IconButton type="button" className={classes.iconButton} aria-label="search">
-                                            <LockIcon style={{ color: '#ffffff' }} />
-                                        </IconButton>
                                     <h4 style={{ fontWeight: 'normal' }} className="text-light mt-5">Gib hier deinen Code ein und bestätige mit Enter.</h4>
                                 </motion.div>
                             </center>
