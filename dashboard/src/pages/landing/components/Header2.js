@@ -10,6 +10,8 @@ import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { motion } from 'framer-motion';
 import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
 
+import { Button } from '@material-ui/core';
+
 const RootStyle = styled(motion.div)(({ theme }) => ({
     position: 'relative',
     [theme.breakpoints.up('md')]: {
@@ -42,7 +44,7 @@ const Header2 = ({ title }) => {
 
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul id="nav" className="navbar-nav ml-auto">
-                                        <li className="nav-item active">
+                                        {/* <li className="nav-item active">
                                             <Link className="page-scroll" to="/" style={{textDecoration: "none"}}>
                                                 Home
                                             </Link>
@@ -66,6 +68,9 @@ const Header2 = ({ title }) => {
                                             <Link className="page-scroll" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
                                                 Login
                                             </Link>
+                                        </li> */}
+                                        <li className="nav-item">
+                                            <Button style={{ borderRadius: '25px', backgroundColor: 'white', color: 'rgb(104, 82, 237)', fontSize: '11px'}} variant="contained">jetzt starten</Button>
                                         </li>
                                         <li className="nav-item">
                                             <FacebookIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none"}} />
@@ -73,45 +78,70 @@ const Header2 = ({ title }) => {
                                         <li className="nav-item">
                                             <InstagramIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none"}} />
                                         </li>
+                                        <li>
+                                        <button style={{display: "block", padding: "0"}} className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                            <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                            <span style={{backgroundColor: "white"}} className="toggler-icon"></span>
+                                        </button>       
+                                        </li>
                                     </ul> 
                                 </div>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div style={{textAlign: "center"}} class="offcanvas offcanvas-end menu-bg" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div className="offcanvas-header">
                                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div className="offcanvas-body offcanvas-text">
                                         <div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/" style={{textDecoration: "none"}}>
+                                                <Link to="/" style={{textDecoration: "none", color: "white"}}>
                                                     Home
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/funktionen" style={{textDecoration: "none"}}>
+                                                <Link to="/funktionen" style={{textDecoration: "none", color: "white"}}>
                                                     Funktionen
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/preise" style={{textDecoration: "none"}}>
+                                                <Link to="/preise" style={{textDecoration: "none", color: "white"}}>
                                                     Preise
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/kontakt" style={{textDecoration: "none"}}>
-                                                    Kontakt
-                                                </Link>
-                                                <br></br>
-                                            </div>
-                                            <div style={{margin: "20px"}}>
-                                                <Link className="h1" to="/auth/login-unprotected" style={{textDecoration: "none"}}>
+                                                <Link  to="/auth/login-unprotected" style={{textDecoration: "none", color: "white"}}>
                                                     Login
                                                 </Link>
                                                 <br></br>
                                             </div>
-                                        </div> 
+                                            <div style={{margin: "20px"}}>
+                                                <Link  to="/kontakt" style={{textDecoration: "none", color: "white"}}>
+                                                    Kontact
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link  to="/agb" style={{textDecoration: "none", color: "white"}}>
+                                                    AGB
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link  to="/cookie-richtlinie-eu" style={{textDecoration: "none", color: "white"}}>
+                                                    Cookie-Richtlinie
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link  to="/cookie-richtlinie-eu" style={{textDecoration: "none", color: "white"}}>
+                                                    Impressum
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                        </div>  
                                     </div>
                                 </div>
                             </nav>

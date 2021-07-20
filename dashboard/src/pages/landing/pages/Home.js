@@ -15,7 +15,9 @@ import {
 // Components
 import Header from '../components/Header';
 import Footer_ from '../components/Footer_';
-import Footer from './Footer'
+import Footer from './Footer';
+
+import { VerifyCodeForm } from '../../../components/authentication/verify-code/index'
 
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
@@ -100,14 +102,15 @@ const Home = () => {
                                 <motion.div variants={varFadeIn}>
                                     <h2 style={{ fontWeight: 'normal' }} className="text-light">Fotoalbum Code</h2>
                                     <hr className="forhr" />
-                                        <InputBase
+                                        {/* <InputBase
                                             className={classes.input}
                                             placeholder="XXXXXX"
                                             onKeyDown={checkCode}
                                             onChange={(e) => setordernumber(e.target.value)}
                                             maxlength="6"
                                             inputProps={{ 'aria-label': 'XXXXXX' }}
-                                        />
+                                        /> */}
+                                        <VerifyCodeForm />
                                         <IconButton type="button" className={classes.iconButton} aria-label="search">
                                             <LockIcon style={{ color: '#ffffff' }} />
                                         </IconButton>

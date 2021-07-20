@@ -105,7 +105,7 @@ const Header = () => {
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link  to="/kontact" style={{textDecoration: "none", color: "white"}}>
+                                                <Link  to="/kontakt" style={{textDecoration: "none", color: "white"}}>
                                                     Kontact
                                                 </Link>
                                                 <br></br>

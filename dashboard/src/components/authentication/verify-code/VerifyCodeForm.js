@@ -10,6 +10,8 @@ import { PATH_DASHBOARD } from '../../../routes/paths';
 // utils
 import fakeRequest from '../../../utils/fakeRequest';
 
+import { makeStyles } from '@material-ui/core/styles';
+
 // ----------------------------------------------------------------------
 
 // eslint-disable-next-line consistent-return
@@ -19,7 +21,16 @@ function maxLength(object) {
   }
 }
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    borderColor: 'white',
+    borderStyle: 'solid',
+    color: 'white'
+  }
+}));
+
 export default function VerifyCodeForm() {
+  const classes = useStyles();
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
 
@@ -52,11 +63,13 @@ export default function VerifyCodeForm() {
   const { values, errors, isValid, touched, isSubmitting, handleSubmit, getFieldProps } = formik;
 
   return (
+    <div>
     <FormikProvider value={formik}>
       <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
         <Stack direction="row" spacing={2} justifyContent="center">
           {Object.keys(values).map((item) => (
             <OutlinedInput
+              className={classes.root}
               key={item}
               {...getFieldProps(item)}
               type="number"
@@ -69,21 +82,22 @@ export default function VerifyCodeForm() {
                   p: 0,
                   textAlign: 'center',
                   width: { xs: 36, sm: 56 },
-                  height: { xs: 36, sm: 56 }
+                  height: { xs: 36, sm: 56 },
                 }
               }}
             />
           ))}
         </Stack>
 
-        <FormHelperText error={!isValid} style={{ textAlign: 'right' }}>
+        {/* <FormHelperText error={!isValid} style={{ textAlign: 'right' }}>
           {!isValid && 'Code is required'}
-        </FormHelperText>
+        </FormHelperText> */}
 
-        <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={isSubmitting} sx={{ mt: 3 }}>
+        {/* <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={isSubmitting} sx={{ mt: 3 }}>
           Verify
-        </LoadingButton>
+        </LoadingButton> */}
       </Form>
     </FormikProvider>
+    </div>
   );
 }
