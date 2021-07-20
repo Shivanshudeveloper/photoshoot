@@ -7,6 +7,8 @@ import {
     isBrowser
 } from "react-device-detect";
 
+import { Button } from '@material-ui/core';
+
 const Header = () => {
     return (
         <>
@@ -55,6 +57,9 @@ const Header = () => {
                                             </Link>
                                         </li> */}
                                         <li className="nav-item">
+                                        <Button style={{ borderRadius: '25px', backgroundColor: 'white', color: 'rgb(104, 82, 237)', fontSize: '11px'}} variant="contained">jetzt starten</Button>
+                                        </li>
+                                        <li className="nav-item">
                                             <FacebookIcon style={{ color: '#ffffff', cursor: 'pointer', textDecoration: "none" }} />
                                         </li>
                                         <li className="nav-item">
@@ -94,14 +99,32 @@ const Header = () => {
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link to="/kontakt" style={{textDecoration: "none", color: "white"}}>
-                                                    Kontakt
+                                                <Link  to="/auth/login-unprotected" style={{textDecoration: "none", color: "white"}}>
+                                                    Login
                                                 </Link>
                                                 <br></br>
                                             </div>
                                             <div style={{margin: "20px"}}>
-                                                <Link  to="/auth/login-unprotected" style={{textDecoration: "none", color: "white"}}>
-                                                    Login
+                                                <Link  to="/kontact" style={{textDecoration: "none", color: "white"}}>
+                                                    Kontact
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link  to="/agb" style={{textDecoration: "none", color: "white"}}>
+                                                    AGB
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link  to="/cookie-richtlinie-eu" style={{textDecoration: "none", color: "white"}}>
+                                                    Cookie-Richtlinie
+                                                </Link>
+                                                <br></br>
+                                            </div>
+                                            <div style={{margin: "20px"}}>
+                                                <Link  to="/cookie-richtlinie-eu" style={{textDecoration: "none", color: "white"}}>
+                                                    Impressum
                                                 </Link>
                                                 <br></br>
                                             </div>

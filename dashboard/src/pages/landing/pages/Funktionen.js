@@ -124,7 +124,7 @@ const Funktionen = () => {
                             <motion.div variants={varFadeInUp}>
                             <div style={{ marginTop: '15%' }} className="row">
                                 <div className="col-md">
-                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg" />
+                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg2" />
                                 </div>
                                 <div className="col-md">
                                     <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492943/photoshooted/download_1_iq44kp.svg" />
@@ -371,7 +371,7 @@ const Funktionen = () => {
 
                             <div className="row mt-5">
                                 <div className="col-md">
-                                    <img className="serviceimg" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621494227/photoshooted/devices-1-535281af_jr6zu1.webp" />
+                                    <img className="serviceimg2" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621494227/photoshooted/devices-1-535281af_jr6zu1.webp" />
                                 </div>
                                 <div style={{margin: "5%"}} className="col-md">
                                     <h2 style={{ color: '#6852ed' }}>

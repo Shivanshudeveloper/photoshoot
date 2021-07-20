@@ -11,6 +11,7 @@ import AuthGuard from '../guards/AuthGuard';
 // import RoleBasedGuard from '../guards/RoleBasedGuard';
 // components
 import LoadingScreen from '../components/LoadingScreen';
+import AGB from 'src/pages/landing/pages/AGB';
 
 // ----------------------------------------------------------------------
 
@@ -241,6 +242,7 @@ export default function Router() {
     { path: '/preise', element: <Preise /> },
     { path: '/kontakt', element: <Kontakt /> },
     { path: '/cookie-richtlinie-eu', element: <Impressum /> },
+    { path: '/agb', element: <AGB /> },
   ]);
 }
 

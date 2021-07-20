@@ -51,7 +51,7 @@ const Impressum = () => {
             <Header2 title="Impressum" />
             
 
-            <div style={{ marginTop: '80px' }} className="container">
+            <div style={{ marginTop: '80px', color: '#646464' }} className="container">
                 <span>
                     Angaben gemäß §5 TMG <br />
                     photoshooted <br />
