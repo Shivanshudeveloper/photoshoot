@@ -5,7 +5,7 @@
     src: url('./VarelaRound-Regular.ttf');
 }
 
-h1 ,h2 ,h3, h4, h5, h6, p, * {
+h1 ,h2 ,h3, h4, h5, h6, p, input, * {
     font-family: 'VarelaRound', sans-serif;
 }
 
@@ -175,6 +175,12 @@ table {
     background-image: linear-gradient(45deg,#6852ed 40%,#bb40ff);
 }
 
+.uk-button-primary2 {
+    background-color: #6852ed;
+    color: #fff;
+    background-image: linear-gradient(45deg,#6852ed 40%,#bb40ff);
+}
+
 .menu-bg{
     background-color: #6852ed;
     background-image: linear-gradient(45deg,#6852ed 40%,#bb40ff);
@@ -187,4 +193,18 @@ table {
     box-sizing: border-box;
  }
  
-    
+.forverification {
+    font-family: 'VarelaRound', sans-serif !important;
+}    
+
+.btnClose {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    background: transparent url("https://cpng.pikpng.com/pngl/s/254-2542087_logo-close-icon-png-white-clipart.png") center/1em auto no-repeat;
+    border: 0;
+    border-radius: .25rem;
+    opacity: .5;
+}

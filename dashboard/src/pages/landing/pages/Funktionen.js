@@ -87,7 +87,9 @@ const Funktionen = () => {
                                     </p>
                                 </div>
                                 <div className="col-md">
-                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="serviceimg" />
+                                    <center>
+                                        <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="serviceimg" />
+                                    </center>
                                 </div>
                             </div>
                             </motion.div>
@@ -95,7 +97,9 @@ const Funktionen = () => {
                             <motion.div variants={varFadeInUp}>
                             <div className="row">
                                 <div className="col-md">
-                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="mb-4" />
+                                    <center>
+                                        <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492501/photoshooted/kal-visuals-IJzTAns4kUk-unsplash-scaled-e1621234107640-220bd19f_sbhkuy.webp" className="mb-4" />
+                                    </center>
                                 </div>
                                 <div className="col-md text-center">
                                     <center>
@@ -124,7 +128,9 @@ const Funktionen = () => {
                             <motion.div variants={varFadeInUp}>
                             <div style={{ marginTop: '15%' }} className="row">
                                 <div className="col-md">
-                                    <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg2" />
+                                    <center>
+                                        <img src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492851/photoshooted/photos-scaled-e1621234050911-3a56d1dd_rinmjt.webp" className="serviceimg2" />
+                                    </center>
                                 </div>
                                 <div className="col-md">
                                     <img style={{ width: '16%', marginBottom: '10px' }} src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1621492943/photoshooted/download_1_iq44kp.svg" />

@@ -3,7 +3,7 @@ import { useSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom';
 import { Form, FormikProvider, useFormik } from 'formik';
 // material
-import { OutlinedInput, FormHelperText, Stack } from '@material-ui/core';
+import { OutlinedInput, FormHelperText, Stack, Button } from '@material-ui/core';
 import { LoadingButton } from '@material-ui/lab';
 // routes
 import { PATH_DASHBOARD } from '../../../routes/paths';
@@ -11,7 +11,7 @@ import { PATH_DASHBOARD } from '../../../routes/paths';
 import fakeRequest from '../../../utils/fakeRequest';
 
 import { makeStyles } from '@material-ui/core/styles';
-
+import ReactCodeInput from 'react-verification-code-input';
 // ----------------------------------------------------------------------
 
 // eslint-disable-next-line consistent-return
@@ -23,8 +23,8 @@ function maxLength(object) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    borderColor: 'white',
-    borderStyle: 'solid',
+    // borderColor: 'white',
+    // borderStyle: 'solid',
     color: 'white'
   }
 }));
@@ -65,9 +65,9 @@ export default function VerifyCodeForm() {
   return (
     <div>
     <FormikProvider value={formik}>
-      <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
+      <Form autoComplete="off" onSubmit={handleSubmit}>
         <Stack direction="row" spacing={2} justifyContent="center">
-          {Object.keys(values).map((item) => (
+          {/* {Object.keys(values).map((item) => (
             <OutlinedInput
               className={classes.root}
               key={item}
@@ -85,16 +85,17 @@ export default function VerifyCodeForm() {
                 }
               }}
             />
-          ))}
+          ))} */}
+          <ReactCodeInput className="forverification" />
         </Stack>
 
         {/* <FormHelperText error={!isValid} style={{ textAlign: 'right' }}>
           {!isValid && 'Code is required'}
         </FormHelperText> */}
 
-        <LoadingButton className ="uk-button-primary" style={{width: '35%'}} size="large" type="submit" variant="contained" loading={isSubmitting} sx={{ mt: 3}}>
+        <Button className ="uk-button-primary2" style={{width: '35%'}} size="large" type="submit" variant="contained" sx={{ mt: 3}}>
           Submit
-        </LoadingButton>
+        </Button>
       </Form>
     </FormikProvider>
     </div>
