@@ -1,0 +1,2 @@
+(this["webpackJsonp@minimal/material-kit-react"]=this["webpackJsonp@minimal/material-kit-react"]||[]).push([[140],{4280:function(t,e,i){"use strict";i.r(e),i.d(e,"default",(function(){return r}));i(1);var a=i(312),n=i(0);function r(){return Object(n.jsxs)(n.Fragment,{children:[Object(n.jsx)(a.a,{}),Object(n.jsx)("h2",{className:"forheadingscolors",children:"Bills"})]})}}}]);
+//# sourceMappingURL=140.e3b93a18.chunk.js.map

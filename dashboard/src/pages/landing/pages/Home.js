@@ -142,17 +142,23 @@ const Home = () => {
                     }
                 </div>
             </RootStyle>
+
+            {
+                isBrowser ? (
+                <div style={{ position: 'fixed', bottom: '0', width: '100%' }}>
+                    <Footer/>
+                </div>
+                ) : null
+            }
+
             </section>
         </div>
-        {isBrowser ? (
-            <div>
-                <Footer/>
-            </div>
-        ):(
-            <div className="footer-fix">
-                <Footer/>
-            </div>
-        )
+        {
+            !isBrowser ? (
+                <div className="footer-fix">
+                    <Footer/>
+                </div>
+            ) : null
         }
         </div>
     )
