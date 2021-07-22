@@ -76,6 +76,7 @@ const Home = () => {
 
 
     return (
+        <div>
         <div style={{height: "100vh", width: "100vw"}}>
             <Helmet>
                 <style type="text/css">{`
@@ -142,9 +143,17 @@ const Home = () => {
                 </div>
             </RootStyle>
             </section>
-            <div style={{position: 'fixed', bottom: "0px", width: "100%"}}>
-                <Footer />
+        </div>
+        {isBrowser ? (
+            <div>
+                <Footer/>
             </div>
+        ):(
+            <div className="footer-fix">
+                <Footer/>
+            </div>
+        )
+        }
         </div>
     )
 }

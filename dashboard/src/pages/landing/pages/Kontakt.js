@@ -12,6 +12,10 @@ import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { motion } from 'framer-motion';
 import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../../components/animate';
 
+import {
+    isBrowser
+} from "react-device-detect";
+
 const RootStyle = styled(motion.div)(({ theme }) => ({
     position: 'relative',
     [theme.breakpoints.up('md')]: {
@@ -126,6 +130,16 @@ const Kontakt = () => {
             <br />
             <br />
             <Footer />
+            {/* {isBrowser ? (
+                    <div>
+                        <Footer/>
+                    </div>
+                ):(
+                    <div className="footer-fix">
+                        <Footer/>
+                    </div>
+                )
+            } */}
         </>
     )
 }

@@ -7,6 +7,10 @@ import Header2 from '../components/Header2';
 import Footer2 from '../components/Footer2';
 import Footer from './Footer';
 
+import {
+    isBrowser
+} from "react-device-detect";
+
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
@@ -106,7 +110,17 @@ const AGB = () => {
                 <p>Es gilt das Recht der Bundesrepublik Deutschland, wobei die Geltung des UN-Kaufrechts ausgeschlossen wird. Nimmt der Nutzer als Freiberufler, Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen die Leistungen von photoshooted in Anspruch, so ist der Sitz der photoshooted GmbH ausschließlicher Gerichtsstand für alle Streitigkeiten aus dem Vertragsverhältnis. Sollten einzelne Bestimmungen dieser Nutzungsbedingungen unwirksam sein oder werden, so berührt dies die Wirksamkeit der übrigen Bestimmungen nicht.</p>
 
             </div>
-            <Footer/>
+            <Footer />
+            {/* {isBrowser ? (
+                    <div>
+                        <Footer/>
+                    </div>
+                ):(
+                    <div className="footer-fix">
+                        <Footer/>
+                    </div>
+                )
+            } */}
         </>
     )
 }

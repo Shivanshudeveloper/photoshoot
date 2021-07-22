@@ -11,7 +11,7 @@ import { PATH_DASHBOARD } from '../../../routes/paths';
 import fakeRequest from '../../../utils/fakeRequest';
 
 import { makeStyles } from '@material-ui/core/styles';
-import ReactCodeInput from 'react-verification-code-input';
+//import ReactCodeInput from 'react-verification-code-input';
 // ----------------------------------------------------------------------
 
 // eslint-disable-next-line consistent-return
@@ -86,7 +86,7 @@ export default function VerifyCodeForm() {
               }}
             />
           ))} */}
-          <ReactCodeInput className="forverification" />
+          {/* <ReactCodeInput className="forverification" /> */}
         </Stack>
 
         {/* <FormHelperText error={!isValid} style={{ textAlign: 'right' }}>

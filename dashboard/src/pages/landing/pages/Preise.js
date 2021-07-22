@@ -27,6 +27,7 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
 
 const Preise = () => {
     return (
+        <>
         <div style={{overflowX: "hidden"}}>
             <section className="forprices">
                 <Header />
@@ -441,9 +442,19 @@ const Preise = () => {
                 </div>
             </RootStyle>
             </section>
-
-            <Footer />
         </div>
+        <Footer />
+            {/* {isBrowser ? (
+                    <div>
+                        <Footer/>
+                    </div>
+                ):(
+                    <div className="footer-fix">
+                        <Footer/>
+                    </div>
+                )
+            } */}
+        </>
     )
 }
 

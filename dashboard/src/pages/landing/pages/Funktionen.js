@@ -459,7 +459,18 @@ const Funktionen = () => {
             </section>
 
 
-            <Footer/>
+            
+            <Footer />
+            {/* {isBrowser ? (
+                    <div>
+                        <Footer/>
+                    </div>
+                ):(
+                    <div className="footer-fix">
+                        <Footer/>
+                    </div>
+                )
+            } */}
         </>
     )
 }

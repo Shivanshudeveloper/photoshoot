@@ -7,6 +7,11 @@ import Header2 from '../components/Header2';
 import Footer2 from '../components/Footer2';
 import Footer from './Footer';
 
+
+import {
+    isBrowser
+} from "react-device-detect";
+
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
@@ -131,7 +136,17 @@ const Impressum = () => {
 
                 </span>
             </div>
-            <Footer/>
+            <Footer />
+            {/* {isBrowser ? (
+                    <div>
+                        <Footer/>
+                    </div>
+                ):(
+                    <div>
+                        <Footer/>
+                    </div>
+                )
+            } */}
         </>
     )
 }
