@@ -59,10 +59,10 @@ const Preise = () => {
                 <br />
                 <div style={{ marginBottom: '50px', maxWidth: '1360px' }} className="container mt-5">
                     <div className="row">
-                                          
+
                         <div style={{ marginBottom: '100px' }} className="col-md">
-                        <motion.div variants={varFadeInUp} className="col-md">     
-                            <div className="card card-body shadow">
+                        <motion.div variants={varFadeInUp}>
+                        <div className="card card-body shadow">
                                 <h3 className="gb">5GB</h3>
                                 <div class="el-title uk-heading-large uk-margin-top uk-margin-remove-bottom">8,99<span class="uk-text-top uk-h3">€</span></div>
                                 <h6 className="text-secondary mt-4 mb-4">
@@ -108,8 +108,10 @@ const Preise = () => {
                                 </center>
 
                             </div>
-                        </motion.div> 
+                        </motion.div>
                         </div>
+
+
                         <div style={{ marginBottom: '100px' }} className="col-md">
                         <motion.div variants={varFadeInUp}>
                         <div className="card card-body shadow">

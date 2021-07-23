@@ -164,7 +164,9 @@ const Header2 = ({ title }) => {
                                         </motion.div>
                                     ) : (
                                         <motion.div variants={varFadeIn}>
-                                        <h2 style={{color: "white", marginTop: '28px'}}>{title}</h2>
+                                            <center>
+                                                <h2 style={{color: "white", marginTop: '28px', marginRight: '-24px'}}>{title}</h2>
+                                            </center>
                                         </motion.div>
                                     )
                                 }
@@ -301,7 +303,7 @@ const Header2 = ({ title }) => {
                                 </motion.div>
                             ) : (
                                 <motion.div variants={varFadeIn}>
-                                <h2 style={{color: "white", marginTop: '28px'}}>{title}</h2>
+                                <h2 style={{color: "white", marginTop: '28px', marginRight: '-32px'}}>{title}</h2>
                                 </motion.div>
                             )
                         }
